@@ -57,7 +57,10 @@
   .navbrand img{width:30px;height:30px;}
   .card{background:var(--cream);border:1px solid var(--line);border-radius:6px;padding:32px 34px;}
   .featured{display:grid;grid-template-columns:320px 1fr;gap:48px;align-items:center;}
+  .photo-banner{width:100%;height:460px;overflow:hidden;}
+  .photo-banner img{width:100%;height:100%;object-fit:cover;display:block;}
   @media(max-width:860px){
+    .photo-banner{height:300px;}
     .grid2,.grid3,.grid4,.featured{grid-template-columns:1fr !important;}
     .wrap{padding:0 24px;}
     .sec{padding:72px 0;}
@@ -176,6 +179,8 @@
   </div>
 </section>
 
+<div class="photo-banner"><img src="img/rac1.jpg" alt="" style="object-position:50% 30%;"></div>
+
 <!-- CE QUI EST INCLUS -->
 <section class="sec sec-card">
   <div class="wrap">
@@ -226,6 +231,8 @@
     <div class="quote on-dark">Manifester, ce n'est pas attendre que la vie change. C'est devenir, dès aujourd'hui, la personne qui vit déjà cette vie-là.</div>
   </div>
 </section>
+
+<div class="photo-banner"><img src="img/rac2.jpg" alt="" style="object-position:50% 20%;"></div>
 
 <!-- TEMOIGNAGES -->
 <section class="sec sec-card" id="temoignages">
@@ -322,6 +329,8 @@
     <div class="quote on-dark">Et surtout : vous êtes prêt à devenir souverain de votre transformation.</div>
   </div>
 </section>
+
+<div class="photo-banner"><img src="img/rac3.jpg" alt="" style="object-position:50% 25%;"></div>
 
 <!-- FAQ -->
 <section class="sec" id="faq">

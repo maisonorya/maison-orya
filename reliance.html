@@ -57,7 +57,10 @@
   .navbrand img{width:30px;height:30px;}
   .card{background:var(--cream);border:1px solid var(--line);border-radius:6px;padding:32px 34px;}
   .featured{display:grid;grid-template-columns:320px 1fr;gap:48px;align-items:center;}
+  .photo-banner{width:100%;height:460px;overflow:hidden;}
+  .photo-banner img{width:100%;height:100%;object-fit:cover;display:block;}
   @media(max-width:860px){
+    .photo-banner{height:300px;}
     .grid2,.grid3,.grid4,.featured{grid-template-columns:1fr !important;}
     .wrap{padding:0 24px;}
     .sec{padding:72px 0;}
@@ -230,6 +233,8 @@
   </div>
 </section>
 
+<div class="photo-banner"><img src="img/rel1.jpg" alt="" style="object-position:50% 15%;"></div>
+
 <!-- LE RYTHME -->
 <section class="sec" id="rythme">
   <div class="wrap">
@@ -332,6 +337,8 @@
   </div>
 </section>
 
+<div class="photo-banner"><img src="img/rel2.jpg" alt="" style="object-position:50% 30%;"></div>
+
 <!-- INVESTISSEMENT -->
 <section class="sec sec-dark" id="tarif">
   <div class="wrap">
@@ -392,6 +399,8 @@
     <a href="#contact" class="btn btn-light" style="border-color:var(--ink);">Réserver un appel découverte</a>
   </div>
 </section>
+
+<div class="photo-banner"><img src="img/rel3.jpg" alt="" style="object-position:50% 25%;"></div>
 
 <!-- POUR QUI / PAS POUR QUI -->
 <section class="sec sec-dark" style="padding-top:0;" id="pourqui">
