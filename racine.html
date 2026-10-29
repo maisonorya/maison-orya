@@ -57,10 +57,19 @@
   .brandmark{width:29px;height:29px;border-radius:50%;border:1px solid var(--gold);display:inline-flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:14px;color:var(--gold);flex-shrink:0;}
   .card{background:var(--cream);border:1px solid var(--line);border-radius:6px;padding:32px 34px;}
   .featured{display:grid;grid-template-columns:320px 1fr;gap:48px;align-items:center;}
-  .photo-banner{width:100%;aspect-ratio:3/2;overflow:hidden;}
-  .photo-banner img{width:100%;height:100%;object-fit:cover;object-position:50% 50%;display:block;}
+  .ed-banner{display:grid;grid-template-columns:1fr 1fr;align-items:stretch;background:var(--card);}
+  .ed-banner.rev .ed-photo{order:2;}
+  .ed-banner.rev .ed-text{order:1;}
+  .ed-photo{overflow:hidden;min-height:480px;}
+  .ed-photo img{width:100%;height:100%;object-fit:cover;display:block;}
+  .ed-text{padding:70px 64px;display:flex;flex-direction:column;justify-content:center;}
+  .ed-quote{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:400;font-size:28px;line-height:1.4;color:var(--ink);margin-top:10px;max-width:460px;}
   @media(max-width:860px){
-    .grid2,.grid3,.grid4,.featured{grid-template-columns:1fr !important;}
+    .grid2,.grid3,.grid4,.featured,.ed-banner{grid-template-columns:1fr !important;}
+    .ed-banner.rev .ed-photo,.ed-banner.rev .ed-text{order:0;}
+    .ed-text{padding:48px 24px;}
+    .ed-quote{font-size:22px;}
+    .ed-photo{min-height:360px;}
     .wrap{padding:0 24px;}
     .sec{padding:80px 0;}
     .h1{font-size:30px !important;}
@@ -178,7 +187,13 @@
   </div>
 </section>
 
-<div class="photo-banner"><img src="img/rac1.jpg" alt=""></div>
+<div class="ed-banner">
+  <div class="ed-text">
+    <div class="eyebrow">Votre rythme</div>
+    <div class="ed-quote">Un chemin qui vous appartient entièrement, à votre rythme, rien que pour vous.</div>
+  </div>
+  <div class="ed-photo"><img src="img/ed-rac1.jpg" alt="" style="object-position:50% 55%;"></div>
+</div>
 
 <!-- CE QUI EST INCLUS -->
 <section class="sec sec-card">
@@ -231,7 +246,13 @@
   </div>
 </section>
 
-<div class="photo-banner"><img src="img/rac2.jpg" alt=""></div>
+<div class="ed-banner rev">
+  <div class="ed-photo"><img src="img/ed-rac2.jpg" alt="" style="object-position:50% 55%;"></div>
+  <div class="ed-text">
+    <div class="eyebrow">Manifester</div>
+    <div class="ed-quote">Ancrer, dans le corps, l'identité que vous choisissez de devenir.</div>
+  </div>
+</div>
 
 <!-- TEMOIGNAGES -->
 <section class="sec sec-card" id="temoignages">
@@ -329,7 +350,13 @@
   </div>
 </section>
 
-<div class="photo-banner"><img src="img/rac3.jpg" alt=""></div>
+<div class="ed-banner">
+  <div class="ed-text">
+    <div class="eyebrow">Souveraineté</div>
+    <div class="ed-quote">Devenir souverain·e de sa propre transformation.</div>
+  </div>
+  <div class="ed-photo"><img src="img/ed-rac3.jpg" alt="" style="object-position:60% 55%;"></div>
+</div>
 
 <!-- FAQ -->
 <section class="sec" id="faq">

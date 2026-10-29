@@ -67,10 +67,19 @@
   .qsj-formations{margin-top:14px;max-width:520px;display:flex;flex-direction:column;gap:9px;}
   .offercard{background:var(--cream);border:1px solid var(--line);border-radius:8px;padding:40px;display:flex;flex-direction:column;}
   .offercard.dark{background:var(--ink);color:var(--cream);border-color:rgba(247,243,234,0.15);}
-  .photo-banner{width:100%;aspect-ratio:3/2;overflow:hidden;}
-  .photo-banner img{width:100%;height:100%;object-fit:cover;object-position:50% 50%;display:block;}
+  .ed-banner{display:grid;grid-template-columns:1fr 1fr;align-items:stretch;background:var(--card);}
+  .ed-banner.rev .ed-photo{order:2;}
+  .ed-banner.rev .ed-text{order:1;}
+  .ed-photo{overflow:hidden;min-height:480px;}
+  .ed-photo img{width:100%;height:100%;object-fit:cover;display:block;}
+  .ed-text{padding:70px 64px;display:flex;flex-direction:column;justify-content:center;}
+  .ed-quote{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:400;font-size:28px;line-height:1.4;color:var(--ink);margin-top:10px;max-width:460px;}
   @media(max-width:860px){
-    .grid2,.grid3,.grid4,.featured,.qsj-split{grid-template-columns:1fr !important;}
+    .grid2,.grid3,.grid4,.featured,.qsj-split,.ed-banner{grid-template-columns:1fr !important;}
+    .ed-banner.rev .ed-photo,.ed-banner.rev .ed-text{order:0;}
+    .ed-text{padding:48px 24px;}
+    .ed-quote{font-size:22px;}
+    .ed-photo{min-height:360px;}
     .wrap{padding:0 24px;}
     .sec{padding:80px 0;}
     .h1{font-size:30px !important;}
@@ -137,7 +146,13 @@
   </div>
 </section>
 
-<div class="photo-banner"><img src="img/idx1.jpg" alt=""></div>
+<div class="ed-banner">
+  <div class="ed-text">
+    <div class="eyebrow">Ce que dit le corps</div>
+    <div class="ed-quote">Le corps parle. Souvent bien avant que la tête ne soit prête à l'entendre.</div>
+  </div>
+  <div class="ed-photo"><img src="img/ed-idx1.jpg" alt="" style="object-position:50% 35%;"></div>
+</div>
 
 <!-- REFRAME -->
 <section class="sec sec-card">
@@ -209,7 +224,13 @@
   </div>
 </section>
 
-<div class="photo-banner"><img src="img/idx3.jpg" alt=""></div>
+<div class="ed-banner rev">
+  <div class="ed-photo"><img src="img/ed-idx3.jpg" alt="" style="object-position:55% 45%;"></div>
+  <div class="ed-text">
+    <div class="eyebrow">S'incarner</div>
+    <div class="ed-quote">Vision, identité, corps. Trois dimensions qui se répondent, jusqu'à devenir une seule et même traversée.</div>
+  </div>
+</div>
 
 <!-- QUI SUIS-JE -->
 <section class="qsj-split sec-card" id="qui-suis-je">
@@ -242,7 +263,7 @@
     </div>
   </div>
   <div class="qsj-photo">
-    <img src="9fa289b9457262e7b96e7f771390fe5d.jpg" alt="">
+    <img src="img/qsj-portrait.jpg" alt="" style="object-position:50% 70%;">
   </div>
 </section>
 
@@ -263,7 +284,13 @@
   </div>
 </section>
 
-<div class="photo-banner"><img src="img/idx2.jpg" alt=""></div>
+<div class="ed-banner">
+  <div class="ed-text">
+    <div class="eyebrow">Au quotidien</div>
+    <div class="ed-quote">Une pratique qui continue de vous porter, bien au-delà des séances.</div>
+  </div>
+  <div class="ed-photo"><img src="img/ed-idx2.jpg" alt="" style="object-position:50% 65%;"></div>
+</div>
 
 <!-- DEUX CHEMINS -->
 <section class="sec sec-dark" id="chemins">
