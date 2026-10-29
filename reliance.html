@@ -1,0 +1,511 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Maison ORYA — RELIANCE</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Karla:wght@400;500;600;700&display=swap">
+<style>
+  :root{
+    --cream:#F7F3EA;
+    --card:#EFE7D5;
+    --ink:#211D18;
+    --ink-soft:#5B5346;
+    --gold:#C6A968;
+    --gold-deep:#9C7F45;
+    --line:#E3DAC4;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;font-family:'Karla',sans-serif;color:var(--ink);background:var(--cream);-webkit-font-smoothing:antialiased;}
+  a{color:var(--gold-deep);text-decoration:none;}
+  a:hover{color:var(--gold);}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 40px;}
+  .sec{padding:110px 0;}
+  .sec-dark{background:var(--ink);color:var(--cream);}
+  .sec-card{background:var(--card);}
+  .eyebrow{font-size:12.5px;letter-spacing:3px;text-transform:uppercase;color:var(--gold-deep);font-weight:600;}
+  .eyebrow.on-dark{color:var(--gold);}
+  .h1{font-family:'Cormorant Garamond',serif;font-weight:500;color:var(--ink);line-height:1.15;margin:14px 0 0;font-size:40px;}
+  .h1.on-dark{color:var(--cream);}
+  .h2{font-family:'Cormorant Garamond',serif;font-weight:500;color:var(--gold-deep);font-size:22px;margin:0;}
+  .h2.on-dark{color:var(--gold);}
+  .body-text{font-size:16px;line-height:1.75;color:var(--ink-soft);margin-top:22px;max-width:680px;}
+  .body-text.on-dark{color:var(--cream);opacity:.86;}
+  .quote{font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--gold-deep);font-size:23px;line-height:1.4;margin-top:28px;max-width:680px;}
+  .quote.on-dark{color:var(--gold);}
+  .btn{display:inline-block;padding:17px 42px;border:1px solid currentColor;border-radius:40px;font-size:12.5px;letter-spacing:2.2px;text-transform:uppercase;text-decoration:none;color:inherit;margin-top:34px;font-weight:600;}
+  .btn:hover{background:currentColor;}
+  .btn-dark:hover{color:var(--ink);}
+  .btn-light:hover{color:var(--cream);}
+  .grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:10px 40px;margin-top:24px;}
+  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;margin-top:36px;}
+  .grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:28px;margin-top:40px;}
+  .bullet{padding-left:22px;position:relative;font-size:15px;line-height:1.65;color:var(--ink-soft);}
+  .bullet.on-dark{color:var(--cream);opacity:.85;}
+  .bullet::before{content:"—";position:absolute;left:0;color:var(--gold-deep);}
+  .bullet.on-dark::before{color:var(--gold);}
+  .divider{height:1px;background:var(--line);margin:36px 0;max-width:680px;}
+  .divider.on-dark{background:var(--cream);opacity:.2;}
+  nav{position:sticky;top:0;z-index:50;background:rgba(247,243,234,0.92);backdrop-filter:blur(6px);border-bottom:1px solid var(--line);}
+  .navwrap{max-width:1140px;margin:0 auto;padding:18px 40px;display:flex;align-items:center;justify-content:space-between;}
+  .navlinks{display:flex;gap:36px;align-items:center;}
+  .navlinks a{font-size:12.5px;letter-spacing:1.5px;text-transform:uppercase;color:var(--ink-soft);}
+  .navlinks a:hover{color:var(--gold-deep);}
+  .navcta{padding:11px 26px;border:1px solid var(--ink);border-radius:30px;font-size:11.5px;letter-spacing:1.5px;text-transform:uppercase;color:var(--ink);}
+  .navcta:hover{background:var(--ink);color:var(--cream);}
+  .navbrand{display:flex;align-items:center;gap:10px;font-family:'Cormorant Garamond',serif;font-size:18px;letter-spacing:2px;color:var(--ink);}
+  .navbrand img{width:30px;height:30px;}
+  .card{background:var(--cream);border:1px solid var(--line);border-radius:6px;padding:32px 34px;}
+  .featured{display:grid;grid-template-columns:320px 1fr;gap:48px;align-items:center;}
+  @media(max-width:860px){
+    .grid2,.grid3,.grid4,.featured{grid-template-columns:1fr !important;}
+    .wrap{padding:0 24px;}
+    .sec{padding:72px 0;}
+    .h1{font-size:30px !important;}
+    .navlinks{display:none;}
+    .navwrap{padding:14px 20px;}
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="navwrap">
+    <div class="navbrand"><img src="59b3815474f8cc07a23fa32e7fe5e2ff.png" alt=""> MAISON ORYA</div>
+    <div class="navlinks">
+      <a href="index.html">Accueil</a>
+      <a href="#pourquoi">Pourquoi un groupe</a>
+      <a href="#rythme">Le rythme</a>
+      <a href="#temoignages">Témoignages</a>
+      <a href="#tarif">Tarif</a>
+      <a href="#rejoindre">Rejoindre</a>
+      <a href="#faq">FAQ</a>
+      <a href="racine.html">Voir Racine (individuel)</a>
+    </div>
+    <a href="#contact" class="navcta">Appel découverte</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div style="position:relative;width:100%;height:92vh;min-height:620px;overflow:hidden;">
+  <img src="9759cd8f7fb11f27243e237549c64d49.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 28%;filter:grayscale(1);">
+  <div style="position:absolute;inset:0;background:linear-gradient(180deg, rgba(33,29,24,0.4) 0%, rgba(33,29,24,0.45) 45%, rgba(33,29,24,0.9) 100%);"></div>
+  <div style="position:relative;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;text-align:center;padding:0 24px 90px;color:var(--cream);">
+    <div class="eyebrow on-dark">Maison ORYA</div>
+    <div style="margin-top:16px;font-family:'Cormorant Garamond',serif;font-weight:600;font-size:min(11vw, 96px);line-height:1;letter-spacing:2px;color:var(--cream);">RELIANCE</div>
+    <div style="margin-top:18px;font-size:14px;letter-spacing:2.5px;text-transform:uppercase;color:var(--cream);opacity:.85;">Accompagnement collectif <span style="color:var(--gold);margin:0 8px;">·</span> Groupe de 6 <span style="color:var(--gold);margin:0 8px;">·</span> 6 mois</div>
+    <div style="margin-top:34px;font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:400;font-size:clamp(20px,3vw,32px);line-height:1.35;max-width:820px;color:var(--cream);">Se transformer, porté par un cercle.</div>
+    <a href="#contact" class="btn" style="border-color:var(--cream);">Réserver un appel découverte</a>
+  </div>
+</div>
+
+<div class="sec" style="padding:60px 0 0;">
+  <div class="wrap">
+    <div class="body-text" style="text-align:center;margin:0 auto;">Vous retrouvez ici tout ce qui est propre à RELIANCE. Le diagnostic de départ, la méthode et « qui je suis » sont communs à mes deux accompagnements — <a href="index.html">vous pouvez les lire sur la page d'accueil</a>.</div>
+  </div>
+</div>
+
+<!-- POURQUOI UN GROUPE -->
+<section class="sec sec-card" id="pourquoi">
+  <div class="wrap">
+    <div class="eyebrow">Le point de départ</div>
+    <div class="h1" style="max-width:680px;">Pourquoi un groupe</div>
+    <div class="body-text">
+      Nous nous construisons dans le regard des autres — et c'est aussi dans le regard des autres que nous pouvons nous retrouver. Voir quelqu'un d'autre traverser ce que l'on traverse soi-même. Se reconnaître dans son histoire sans avoir besoin de tout expliquer. Sentir qu'on n'est pas seul à avoir peur, à douter, à vouloir autre chose sans savoir quoi.
+    </div>
+    <div class="quote">C'est ça, l'effet miroir : ce qui se transforme chez l'un réveille quelque chose chez l'autre, sans qu'un mot ne soit nécessaire.</div>
+    <div class="body-text">
+      Et il y a aussi quelque chose de plus simple : on avance plus vite, et plus loin, quand on n'est pas seul à porter l'élan.
+    </div>
+  </div>
+</section>
+
+<!-- POURQUOI LE COLLECTIF (fil rouge) -->
+<section class="sec sec-dark" id="filrouge">
+  <div class="wrap">
+    <div class="eyebrow on-dark">Le fil rouge</div>
+    <div class="h1 on-dark" style="font-size:34px;max-width:680px;">Pourquoi le collectif change tout</div>
+    <div class="body-text on-dark" style="max-width:820px;">
+      Le collectif est une manière à part entière de se transformer, portée par ce qu'un groupe rend possible : le miroir, le soutien, l'élan commun.
+    </div>
+    <div class="divider on-dark"></div>
+    <div class="grid3" style="max-width:960px;gap:36px 40px;">
+      <div>
+        <div class="h2 on-dark" style="font-size:19px;">Le soutien dans les jours difficiles</div>
+        <div style="margin-top:8px;font-size:14px;line-height:1.6;color:var(--cream);opacity:.82;">Un relais quand on n'a plus l'élan seul : le groupe porte ce qu'on ne peut pas porter seul, ce jour-là.</div>
+      </div>
+      <div>
+        <div class="h2 on-dark" style="font-size:19px;">L'effet miroir</div>
+        <div style="margin-top:8px;font-size:14px;line-height:1.6;color:var(--cream);opacity:.82;">Se reconnaître dans le parcours d'une autre personne, sans avoir besoin de tout expliquer — ce qui se transforme chez l'un réveille quelque chose chez l'autre.</div>
+      </div>
+      <div>
+        <div class="h2 on-dark" style="font-size:19px;">Sortir de l'enfermement et de la honte</div>
+        <div style="margin-top:8px;font-size:14px;line-height:1.6;color:var(--cream);opacity:.82;">Ce qui est partagé cesse d'être un secret qu'on porte seul, et perd son pouvoir sur nous.</div>
+      </div>
+      <div>
+        <div class="h2 on-dark" style="font-size:19px;">Sortir de la solitude</div>
+        <div style="margin-top:8px;font-size:14px;line-height:1.6;color:var(--cream);opacity:.82;">Ne plus être seul face aux mois difficiles ; sentir que l'on avance à plusieurs, au même rythme.</div>
+      </div>
+      <div>
+        <div class="h2 on-dark" style="font-size:19px;">Le modèle qui rend le changement crédible</div>
+        <div style="margin-top:8px;font-size:14px;line-height:1.6;color:var(--cream);opacity:.82;">Voir une autre personne le faire avant soi, ou en même temps, rend le « c'est possible » concret, pas juste théorique.</div>
+      </div>
+      <div>
+        <div class="h2 on-dark" style="font-size:19px;">L'engagement qui tient</div>
+        <div style="margin-top:8px;font-size:14px;line-height:1.6;color:var(--cream);opacity:.82;">Ce qu'on dit devant le groupe, on le tient plus facilement que ce qu'on se promet seul dans son coin.</div>
+      </div>
+      <div>
+        <div class="h2 on-dark" style="font-size:19px;">La joie qui se démultiplie</div>
+        <div style="margin-top:8px;font-size:14px;line-height:1.6;color:var(--cream);opacity:.82;">La victoire d'une autre personne nourrit la sienne, au lieu de la lui faire sentir seul dans son propre rythme.</div>
+      </div>
+      <div>
+        <div class="h2 on-dark" style="font-size:19px;">Le regard qui déculpabilise</div>
+        <div style="margin-top:8px;font-size:14px;line-height:1.6;color:var(--cream);opacity:.82;">Voir que d'autres, qui semblent « avoir tout géré », doutent et trébuchent aussi — et que ce n'est pas un échec personnel.</div>
+      </div>
+      <div>
+        <div class="h2 on-dark" style="font-size:19px;">La diversité des chemins</div>
+        <div style="margin-top:8px;font-size:14px;line-height:1.6;color:var(--cream);opacity:.82;">Chacun apporte un angle différent : ce qui ne débloque rien chez l'un peut débloquer tout chez l'autre.</div>
+      </div>
+    </div>
+    <div class="divider on-dark"></div>
+    <div class="quote on-dark" style="font-size:25px;max-width:780px;">« J'ai vu ça dans mes retraites : la puissance du lien qui se crée en groupe est incroyable — parfois plus marquante que plusieurs années de thérapie individuelle. »</div>
+    <div style="margin-top:12px;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:var(--cream);opacity:.55;">— Ce que je vis, retraite après retraite</div>
+    <div class="quote on-dark" style="font-size:27px;margin-top:40px;">Ce n'est plus votre vie qui vous mène seul. C'est un cercle qui vous aide à reprendre les rênes.</div>
+  </div>
+</section>
+
+<!-- PARCOURS / 6 MOIS -->
+<section class="sec sec-dark" id="parcours">
+  <div class="wrap">
+    <div class="eyebrow on-dark">Le parcours</div>
+    <div class="h1 on-dark" style="max-width:640px;">Six mois, votre transformation</div>
+    <div class="body-text on-dark" style="max-width:780px;">
+      Au-delà du collectif, il y a une méthode et une progression. Chaque mois a sa fonction, dans un fil continu entre vision, identité et corps.
+    </div>
+    <div style="margin-top:44px;display:flex;flex-direction:column;gap:0;max-width:820px;">
+      <div style="display:flex;gap:24px;align-items:flex-start;border-top:1px solid rgba(247,243,234,0.12);padding:22px 0;">
+        <div style="width:90px;flex-shrink:0;font-family:'Cormorant Garamond',serif;font-size:15px;color:var(--gold);letter-spacing:1px;text-transform:uppercase;">Mois 1</div>
+        <div>
+          <div class="h2 on-dark" style="font-size:19px;">Sécurité dans le corps</div>
+          <div style="margin-top:6px;font-size:14.5px;line-height:1.6;color:var(--cream);opacity:.82;">Poser des bases solides, retrouver un sentiment de sécurité dans le corps, avant d'aller plus loin.</div>
+        </div>
+      </div>
+      <div style="display:flex;gap:24px;align-items:flex-start;border-top:1px solid rgba(247,243,234,0.12);padding:22px 0;">
+        <div style="width:90px;flex-shrink:0;font-family:'Cormorant Garamond',serif;font-size:15px;color:var(--gold);letter-spacing:1px;text-transform:uppercase;">Mois 2</div>
+        <div>
+          <div class="h2 on-dark" style="font-size:19px;">Travail de vision</div>
+          <div style="margin-top:6px;font-size:14.5px;line-height:1.6;color:var(--cream);opacity:.82;">Clarifier ce que vous voulez créer, au-delà de ce que vous voulez quitter — notamment à travers des exercices de visualisation.</div>
+        </div>
+      </div>
+      <div style="display:flex;gap:24px;align-items:flex-start;border-top:1px solid rgba(247,243,234,0.12);padding:22px 0;">
+        <div style="width:90px;flex-shrink:0;font-family:'Cormorant Garamond',serif;font-size:15px;color:var(--gold);letter-spacing:1px;text-transform:uppercase;">Mois 3</div>
+        <div>
+          <div class="h2 on-dark" style="font-size:19px;">Incarner sa vision</div>
+          <div style="margin-top:6px;font-size:14.5px;line-height:1.6;color:var(--cream);opacity:.82;">Commencer à vivre depuis cette vision, dans le quotidien.</div>
+        </div>
+      </div>
+      <div style="display:flex;gap:24px;align-items:flex-start;border-top:1px solid rgba(247,243,234,0.12);padding:22px 0;">
+        <div style="width:90px;flex-shrink:0;font-family:'Cormorant Garamond',serif;font-size:15px;color:var(--gold);letter-spacing:1px;text-transform:uppercase;">Mois 4</div>
+        <div>
+          <div class="h2 on-dark" style="font-size:19px;">Rencontrer ses blocages</div>
+          <div style="margin-top:6px;font-size:14.5px;line-height:1.6;color:var(--cream);opacity:.82;">Ce qui résiste se révèle — les mécanismes qui freinent encore l'incarnation de cette vision.</div>
+        </div>
+      </div>
+      <div style="display:flex;gap:24px;align-items:flex-start;border-top:1px solid rgba(247,243,234,0.12);padding:22px 0;">
+        <div style="width:90px;flex-shrink:0;font-family:'Cormorant Garamond',serif;font-size:15px;color:var(--gold);letter-spacing:1px;text-transform:uppercase;">Mois 5</div>
+        <div>
+          <div class="h2 on-dark" style="font-size:19px;">Les transformer</div>
+          <div style="margin-top:6px;font-size:14.5px;line-height:1.6;color:var(--cream);opacity:.82;">Travailler ce qui vient d'être rencontré, pour que ça cesse de mener la danse.</div>
+        </div>
+      </div>
+      <div style="display:flex;gap:24px;align-items:flex-start;border-top:1px solid rgba(247,243,234,0.12);border-bottom:1px solid rgba(247,243,234,0.12);padding:22px 0;">
+        <div style="width:90px;flex-shrink:0;font-family:'Cormorant Garamond',serif;font-size:15px;color:var(--gold);letter-spacing:1px;text-transform:uppercase;">Mois 6</div>
+        <div>
+          <div class="h2 on-dark" style="font-size:19px;">Incarner sa nouvelle identité</div>
+          <div style="margin-top:6px;font-size:14.5px;line-height:1.6;color:var(--cream);opacity:.82;">Habiter pleinement qui vous devenez, dans vos choix, vos relations, votre quotidien.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LE RYTHME -->
+<section class="sec" id="rythme">
+  <div class="wrap">
+    <div class="eyebrow">Le cadre</div>
+    <div class="h1" style="max-width:640px;">Le rythme</div>
+    <div class="body-text">
+      Un rendez-vous collectif d'1h30 chaque semaine, qui structure l'avancée du groupe sur les 6 mois. Chaque semaine aborde un thème précis — le système nerveux, le corps émotionnel et la gestion des émotions, les limites personnelles, l'enfant intérieur, et bien d'autres — pour avancer, mois après mois, vers une transformation incarnée.
+    </div>
+    <div class="grid2" style="max-width:760px;margin-top:22px;">
+      <div class="bullet">Le système nerveux</div>
+      <div class="bullet">Le corps émotionnel et la gestion des émotions</div>
+      <div class="bullet">Les limites personnelles</div>
+      <div class="bullet">L'enfant intérieur</div>
+    </div>
+    <div class="body-text" style="margin-top:14px;font-style:italic;">Et bien d'autres thèmes, selon ce qui se présente pour le groupe. Voici comment s'organise une séance.</div>
+    <div style="margin-top:36px;display:flex;flex-direction:column;gap:22px;max-width:760px;">
+      <div style="display:flex;gap:20px;align-items:flex-start;">
+        <div style="width:160px;flex-shrink:0;font-family:'Cormorant Garamond',serif;font-size:18px;color:var(--gold-deep);">Ouverture<br><span style="font-size:12.5px;font-family:'Karla',sans-serif;color:var(--ink-soft);">cercle de parole</span></div>
+        <div style="font-size:15px;line-height:1.65;color:var(--ink-soft);">Un temps pour déposer où chacun en est, ce qui a émergé depuis la dernière séance.</div>
+      </div>
+      <div style="display:flex;gap:20px;align-items:flex-start;">
+        <div style="width:160px;flex-shrink:0;font-family:'Cormorant Garamond',serif;font-size:18px;color:var(--gold-deep);">Pratique<br><span style="font-size:12.5px;font-family:'Karla',sans-serif;color:var(--ink-soft);">en lien avec le thème</span></div>
+        <div style="font-size:15px;line-height:1.65;color:var(--ink-soft);">Breathwork, yoga ou mouvement conscient, méditation guidée, visualisation, travail de manifestation — et tous mes autres outils de travail intérieur, choisis selon le thème de la semaine.</div>
+      </div>
+      <div style="display:flex;gap:20px;align-items:flex-start;">
+        <div style="width:160px;flex-shrink:0;font-family:'Cormorant Garamond',serif;font-size:18px;color:var(--gold-deep);">Clôture<br><span style="font-size:12.5px;font-family:'Karla',sans-serif;color:var(--ink-soft);">partage</span></div>
+        <div style="font-size:15px;line-height:1.65;color:var(--ink-soft);">Mettre des mots sur ce qui vient d'être traversé, et l'ancrer ensemble avant de se quitter.</div>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <div class="eyebrow">Entre les séances</div>
+    <div class="body-text" style="margin-top:10px;">
+      Le suivi n'est pas seulement hebdomadaire : c'est au quotidien, dans l'espace WhatsApp du groupe, que l'essentiel se construit. Chacun continue son travail individuellement — exercices de visualisation, ancrage de l'identité cible, écriture — et le groupe reste en lien chaque jour pour partager une avancée, une question, un doute.
+      <br><br>
+      Exactement comme dans un accompagnement individuel, c'est un vrai travail de manifestation : poser qui vous voulez devenir, et l'ancrer jour après jour.
+    </div>
+    <div class="quote">Le cercle se retrouve chaque semaine. Mais c'est au quotidien qu'il vous porte.</div>
+  </div>
+</section>
+
+<!-- CE QUI EST INCLUS -->
+<section class="sec sec-card">
+  <div class="wrap">
+    <div class="eyebrow">Ce qui est inclus</div>
+    <div class="h1" style="max-width:640px;">Les moyens mis à votre disposition</div>
+    <div class="grid2" style="max-width:860px;margin-top:30px;">
+      <div class="bullet">Un rendez-vous collectif d'1h30 chaque semaine, pendant 6 mois</div>
+      <div class="bullet">Un groupe volontairement restreint à 6 personnes, pour que chacun garde sa place</div>
+      <div class="bullet">Cercle de parole, breathwork, yoga, méditation guidée, visualisation — et tous mes autres outils de travail intérieur</div>
+      <div class="bullet">Des pratiques personnalisées à faire individuellement entre les séances</div>
+      <div class="bullet">Un espace WhatsApp dédié, pour rester en lien au quotidien</div>
+      <div class="bullet">L'accès à Maison ORYA Online pendant toute la durée du programme</div>
+    </div>
+    <div class="divider"></div>
+    <div class="featured">
+      <div>
+        <div class="eyebrow">C'est quoi Maison ORYA Online ?</div>
+        <div class="h1" style="font-size:24px;">Votre pratique continue de vivre dans votre quotidien</div>
+        <div class="body-text" style="margin-top:14px;">
+          Un live collectif chaque semaine, l'ensemble des cours en replay, une bibliothèque de pratiques — yoga, mobilité, méditation, respiration — et du Breathwork en collectif.
+        </div>
+      </div>
+      <img src="3c4fc4e414d49b2eb837571bea02b42a.jpg" alt="" style="width:100%;height:320px;object-fit:cover;border-radius:4px;object-position:50% 30%;">
+    </div>
+  </div>
+</section>
+
+<!-- QUI SUIS-JE -->
+<section class="sec" id="qui-suis-je">
+  <div class="wrap">
+    <div class="featured" style="grid-template-columns:280px 1fr;">
+      <img src="0ac27e120e8d8faed0ae1b49cc789007.jpg" alt="" style="width:100%;height:380px;object-fit:cover;object-position:50% 25%;border-radius:4px;">
+      <div>
+        <div class="eyebrow">Qui suis-je</div>
+        <div class="h1" style="font-size:28px;">Pourquoi j'ai créé un format collectif</div>
+        <div class="body-text" style="margin-top:14px;">
+          Je m'appelle Oriane. J'ai toujours été attirée par le travail intérieur. Le yoga est entré dans ma vie, et a ouvert un long cheminement — jusqu'à ce que mon corps finisse par crier ce que je refusais encore d'entendre.
+          <br><br>
+          Je guide en collectif depuis longtemps : retraites, cercles de partage, ateliers, breathwork... J'aime profondément la résonance que ça crée. Dans mon propre cheminement, le collectif a été profondément nourrissant, un véritable catalyseur d'évolution. Un groupe permet beaucoup, et fait souvent avancer plus vite.
+          <br><br>
+          C'est là, dans ces espaces collectifs, que j'ai vu encore et encore à quel point le fait d'être plusieurs change ce qui se joue dans une transformation. Une personne qui hésite à se lancer seule, osera souvent le faire si elle sait qu'elle ne sera pas seule à sauter. Une personne qui doute de ce qu'elle ressent, se rassure en entendant une autre nommer exactement la même chose.
+          <br><br>
+          RELIANCE est né de ce chemin : le mien, et celui de toutes les personnes que j'ai vues se transformer, portées par un cercle. Aujourd'hui, j'accompagne celles et ceux qui, comme moi, ont tenu longtemps — et qui sentent qu'il est temps de revenir à eux, entourés plutôt que seuls.
+          <br><br>
+          <a href="index.html">Mon parcours complet est sur la page d'accueil.</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TEMOIGNAGES -->
+<section class="sec sec-card" id="temoignages">
+  <div class="wrap">
+    <div class="eyebrow">Ce qu'on en dit</div>
+    <div class="h1" style="max-width:640px;">[À compléter avec Oriane]</div>
+    <div class="body-text" style="font-style:italic;">
+      Cet emplacement accueillera les retours des personnes accompagnées, cercle après cercle. S'il existe déjà des retours écrits de clients accompagnés en individuel, et qui résonnent avec l'esprit de RELIANCE, on peut les intégrer ici dès le lancement du premier groupe.
+    </div>
+  </div>
+</section>
+
+<!-- INVESTISSEMENT -->
+<section class="sec sec-dark" id="tarif">
+  <div class="wrap">
+    <div class="eyebrow on-dark">L'investissement</div>
+    <div class="h1 on-dark" style="font-size:48px;color:var(--gold);">2 200 €</div>
+    <div style="margin-top:6px;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:var(--cream);opacity:.6;">RELIANCE · 6 mois · par personne · groupe de 6</div>
+    <div class="body-text on-dark">
+      Ce que vous investissez ici n'est pas d'abord un montant, ni même un format. C'est une décision intérieure : celle de ne plus traverser ce chemin seul, de ne plus remettre à plus tard ce qui a besoin d'être transformé.
+      <br><br>
+      Le reste — le rendez-vous hebdomadaire sur 6 mois, la méthode exigeante, le groupe restreint à 6 personnes — n'est qu'un cadre, qui vient porter cette décision une fois qu'elle est prise.
+    </div>
+    <div class="quote on-dark">Quelle valeur est-ce que je me porte ? Et quel prix suis-je prêt à investir pour ne plus être seul face à ce que je veux changer ?</div>
+  </div>
+</section>
+
+<!-- VOLONTAIREMENT RARE -->
+<section class="sec sec-dark" style="padding-top:0;padding-bottom:70px;">
+  <div class="wrap">
+    <div class="divider on-dark" style="max-width:420px;"></div>
+    <div class="eyebrow on-dark" style="margin-top:44px;">Un accompagnement volontairement rare</div>
+    <div class="h1 on-dark" style="font-size:30px;max-width:620px;">Seulement deux groupes par an</div>
+    <div class="body-text on-dark">
+      Je ne fais pas tourner RELIANCE en continu. Seulement deux groupes par an, de 6 personnes chacun.
+      <br><br>
+      Parce qu'un cercle, pour qu'il tienne vraiment, a besoin de constance, de confiance et d'un engagement réel de chacun — et de moi. Ce n'est pas un format que je peux dupliquer à l'infini sans en perdre l'essence.
+    </div>
+    <div class="quote on-dark" style="font-size:25px;">Il y a donc, chaque année, seulement 12 places.</div>
+    <div class="body-text on-dark">Un nouveau groupe ne commence que lorsque je sais pouvoir être pleinement présente, pour les 6 mois entiers du parcours.</div>
+  </div>
+</section>
+
+<!-- COMMENT REJOINDRE -->
+<section class="sec sec-card" id="rejoindre">
+  <div class="wrap">
+    <div class="eyebrow">La suite</div>
+    <div class="h1" style="max-width:640px;">Comment rejoindre le prochain cercle</div>
+    <div class="body-text">Trois étapes simples, sans pression, pour savoir si RELIANCE est le bon espace pour vous maintenant.</div>
+    <div class="grid3" style="margin-top:40px;">
+      <div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:34px;color:var(--gold-deep);">1</div>
+        <div class="h2" style="margin-top:10px;">Réserver un appel découverte</div>
+        <div style="margin-top:8px;font-size:14.5px;line-height:1.6;color:var(--ink-soft);">Gratuit, sans engagement. On parle de votre situation et de ce qui vous amène ici.</div>
+      </div>
+      <div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:34px;color:var(--gold-deep);">2</div>
+        <div class="h2" style="margin-top:10px;">Décider ensemble</div>
+        <div style="margin-top:8px;font-size:14.5px;line-height:1.6;color:var(--ink-soft);">Si RELIANCE est le bon espace pour vous, et que les dates du prochain groupe vous conviennent.</div>
+      </div>
+      <div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:34px;color:var(--gold-deep);">3</div>
+        <div class="h2" style="margin-top:10px;">Intégrer le cercle</div>
+        <div style="margin-top:8px;font-size:14.5px;line-height:1.6;color:var(--ink-soft);">Votre place est réservée parmi les 6 — jusqu'à la première séance.</div>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <div class="eyebrow">Prochain cercle</div>
+    <div class="h1" style="font-size:26px;">[Date à compléter avec Oriane]</div>
+    <a href="#contact" class="btn btn-light" style="border-color:var(--ink);">Réserver un appel découverte</a>
+  </div>
+</section>
+
+<!-- POUR QUI / PAS POUR QUI -->
+<section class="sec sec-dark" style="padding-top:0;" id="pourqui">
+  <div class="wrap">
+    <div class="eyebrow on-dark">À qui s'adresse RELIANCE</div>
+    <div class="h1 on-dark" style="font-size:30px;max-width:620px;">Pour vous, ou pas (encore) ?</div>
+    <div class="grid2" style="margin-top:40px;max-width:900px;gap:48px;">
+      <div>
+        <div class="h2 on-dark">C'est pour vous si...</div>
+        <div style="margin-top:16px;display:flex;flex-direction:column;gap:14px;">
+          <div class="bullet on-dark">Vous sentez que quelque chose doit changer, mais pas tout seul</div>
+          <div class="bullet on-dark">Vous avez besoin d'être vu et entendu, sans avoir à être fort en permanence</div>
+          <div class="bullet on-dark">Vous êtes prêt à regarder honnêtement vos croyances, vos peurs, vos mécanismes</div>
+          <div class="bullet on-dark">Vous croyez qu'un groupe peut vous porter plus loin que vous n'iriez seul</div>
+          <div class="bullet on-dark">Vous êtes prêt à vous engager sur les 6 mois entiers, présent chaque semaine</div>
+        </div>
+      </div>
+      <div>
+        <div class="h2 on-dark" style="opacity:.6;">Pas (encore) pour vous si...</div>
+        <div style="margin-top:16px;display:flex;flex-direction:column;gap:14px;">
+          <div class="bullet on-dark" style="opacity:.6;">Vous cherchez un accompagnement thérapeutique ou un suivi médical</div>
+          <div class="bullet on-dark" style="opacity:.6;">Vous préférez avancer seul, dans un cadre strictement individuel</div>
+          <div class="bullet on-dark" style="opacity:.6;">Vous ne pouvez pas vous engager sur la régularité hebdomadaire pendant 6 mois</div>
+          <div class="bullet on-dark" style="opacity:.6;">Partager votre parcours avec cinq autres personnes vous ferme plutôt que cela ne vous ouvre</div>
+        </div>
+      </div>
+    </div>
+    <div class="quote on-dark">Et surtout : vous êtes prêt à vous laisser porter, autant qu'à porter les autres.</div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="sec" id="faq">
+  <div class="wrap">
+    <div class="eyebrow">Questions fréquentes</div>
+    <div class="h1" style="max-width:640px;">Avant de vous lancer</div>
+    <div style="margin-top:40px;display:flex;flex-direction:column;gap:30px;max-width:760px;">
+
+      <div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--ink);">Combien de temps dure l'accompagnement ?</div>
+        <div style="margin-top:8px;font-size:15px;line-height:1.65;color:var(--ink-soft);">6 mois, à raison d'un rendez-vous collectif d'1h30 chaque semaine, en groupe de 6 personnes.</div>
+      </div>
+
+      <div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--ink);">Est-ce que ce qui se dit dans le groupe reste confidentiel ?</div>
+        <div style="margin-top:8px;font-size:15px;line-height:1.65;color:var(--ink-soft);">Oui. La confidentialité est posée dès la première séance comme une règle du cercle : ce qui se partage ici reste ici.</div>
+      </div>
+
+      <div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--ink);">Pourquoi seulement deux groupes par an ?</div>
+        <div style="margin-top:8px;font-size:15px;line-height:1.65;color:var(--ink-soft);">Parce qu'un cercle a besoin de constance et d'un engagement réel de ma part sur toute la durée. Je ne lance un nouveau groupe que lorsque je sais pouvoir être pleinement présente pour les 6 mois entiers.</div>
+      </div>
+
+      <div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--ink);">Les séances ont-elles lieu en présentiel ou à distance ?</div>
+        <div style="margin-top:8px;font-size:15px;line-height:1.65;color:var(--ink-soft);">Principalement en visio, pour que le groupe puisse se retrouver chaque semaine quel que soit l'endroit où vous êtes.</div>
+      </div>
+
+      <div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--ink);">À qui s'adresse RELIANCE (et à qui ça ne s'adresse pas) ?</div>
+        <div style="margin-top:8px;font-size:15px;line-height:1.65;color:var(--ink-soft);">RELIANCE s'adresse à toute personne prête à s'engager sur 6 mois dans un travail profond, en groupe — pas seulement écouter, mais mettre en mouvement dans son corps et sa vie quotidienne, aux côtés de cinq autres personnes. Si vous préférez un espace rien qu'à vous plutôt qu'un groupe, <a href="racine.html">Racine</a> est sans doute plus adapté.<br><br>Ce n'est pas un accompagnement thérapeutique, ni un substitut à un suivi médical ou psychologique.</div>
+      </div>
+
+      <div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--ink);">Que se passe-t-il après les 6 mois ?</div>
+        <div style="margin-top:8px;font-size:15px;line-height:1.65;color:var(--ink-soft);">Vous repartez avec une vision plus claire de ce que vous voulez créer, l'expérience d'avoir commencé à l'incarner, et des liens tissés avec les cinq autres personnes du groupe. Une relation s'est créée — RELIANCE continue de s'intégrer en vous bien après la fin de l'accompagnement.</div>
+      </div>
+
+      <div style="border:1px dashed var(--line);border-radius:6px;padding:18px 22px;">
+        <div style="font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--ink);">Que se passe-t-il si je dois manquer une séance ?</div>
+        <div style="margin-top:8px;font-size:15px;line-height:1.65;color:var(--ink-soft);">Vous prévenez le groupe, et je vous partage ce qui s'y est dit et travaillé. Le fil ne se perd pas — vous retrouvez le cercle la semaine suivante. <span style="font-style:italic;opacity:.7;">(Proposition à valider avec Oriane — politique définitive à confirmer.)</span></div>
+      </div>
+
+      <div style="font-size:14px;color:var(--ink-soft);">Les questions générales (paiement, premier appel, pas d'expérience requise...) sont sur <a href="index.html">la page d'accueil</a>.</div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL / CONTACT -->
+<section class="sec sec-dark" id="contact" style="padding-top:0;">
+  <div class="wrap">
+    <div class="divider on-dark" style="max-width:420px;"></div>
+    <div class="eyebrow on-dark" style="margin-top:40px;">Prêt à commencer ?</div>
+    <div class="h1 on-dark" style="max-width:600px;">Un premier échange, gratuit et sans engagement</div>
+    <div class="body-text on-dark" style="max-width:600px;">
+      Avant toute chose, je vous propose un appel découverte — <strong style="color:var(--cream);">gratuit, et non compris dans l'accompagnement</strong> — pour parler de votre situation, et voir ensemble si RELIANCE est le bon espace pour vous, et si les dates du prochain groupe vous conviennent.
+    </div>
+    <div style="margin-top:14px;display:flex;flex-direction:column;gap:4px;font-size:15px;color:var(--cream);">
+      <div>Pas de promesse miracle.</div>
+      <div>Pas de recette toute faite.</div>
+      <div>Un cercle pour se retrouver, ensemble.</div>
+    </div>
+    <a href="mailto:oriane_g@hotmail.com?subject=Appel%20d%C3%A9couverte%20RELIANCE" class="btn" style="border-color:var(--cream);">Réserver un appel découverte</a>
+    <div style="margin-top:60px;display:flex;flex-direction:column;gap:3px;font-family:'Cormorant Garamond',serif;font-size:19px;color:var(--gold);">
+      <div>Se relier aux autres.</div>
+      <div>Se reconnaître à travers les autres.</div>
+      <div>Avancer, ensemble.</div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer style="background:var(--ink);padding:40px 0;border-top:1px solid rgba(247,243,234,0.15);">
+  <div class="wrap" style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;">
+    <div style="display:flex;align-items:center;gap:12px;">
+      <img src="59b3815474f8cc07a23fa32e7fe5e2ff.png" alt="" style="width:28px;height:28px;">
+      <div style="font-size:12px;letter-spacing:1.5px;color:var(--cream);opacity:.7;">MAISON ORYA</div>
+    </div>
+    <div style="font-size:13px;color:var(--cream);opacity:.65;display:flex;gap:24px;flex-wrap:wrap;">
+      <span>oriane_g@hotmail.com</span>
+      <span>@maison.orya_</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

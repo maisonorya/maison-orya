@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Maison ORYA — RACINE</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Karla:wght@400;500;600;700&display=swap">
+<style>
+  :root{
+    --cream:#F7F3EA;
+    --card:#EFE7D5;
+    --ink:#211D18;
+    --ink-soft:#5B5346;
+    --gold:#C6A968;
+    --gold-deep:#9C7F45;
+    --line:#E3DAC4;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;font-family:'Karla',sans-serif;color:var(--ink);background:var(--cream);-webkit-font-smoothing:antialiased;}
+  a{color:var(--gold-deep);text-decoration:none;}
+  a:hover{color:var(--gold);}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 40px;}
+  .sec{padding:110px 0;}
+  .sec-dark{background:var(--ink);color:var(--cream);}
+  .sec-card{background:var(--card);}
+  .eyebrow{font-size:12.5px;letter-spacing:3px;text-transform:uppercase;color:var(--gold-deep);font-weight:600;}
+  .eyebrow.on-dark{color:var(--gold);}
+  .h1{font-family:'Cormorant Garamond',serif;font-weight:500;color:var(--ink);line-height:1.15;margin:14px 0 0;font-size:40px;}
+  .h1.on-dark{color:var(--cream);}
+  .h2{font-family:'Cormorant Garamond',serif;font-weight:500;color:var(--gold-deep);font-size:22px;margin:0;}
+  .h2.on-dark{color:var(--gold);}
+  .body-text{font-size:16px;line-height:1.75;color:var(--ink-soft);margin-top:22px;max-width:680px;}
+  .body-text.on-dark{color:var(--cream);opacity:.86;}
+  .quote{font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--gold-deep);font-size:23px;line-height:1.4;margin-top:28px;max-width:680px;}
+  .quote.on-dark{color:var(--gold);}
+  .btn{display:inline-block;padding:17px 42px;border:1px solid currentColor;border-radius:40px;font-size:12.5px;letter-spacing:2.2px;text-transform:uppercase;text-decoration:none;color:inherit;margin-top:34px;font-weight:600;}
+  .btn:hover{background:currentColor;}
+  .btn-dark:hover{color:var(--ink);}
+  .btn-light:hover{color:var(--cream);}
+  .grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:10px 40px;margin-top:24px;}
+  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;margin-top:36px;}
+  .grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:28px;margin-top:40px;}
+  .bullet{padding-left:22px;position:relative;font-size:15px;line-height:1.65;color:var(--ink-soft);}
+  .bullet.on-dark{color:var(--cream);opacity:.85;}
+  .bullet::before{content:"—";position:absolute;left:0;color:var(--gold-deep);}
+  .bullet.on-dark::before{color:var(--gold);}
+  .divider{height:1px;background:var(--line);margin:36px 0;max-width:680px;}
+  .divider.on-dark{background:var(--cream);opacity:.2;}
+  nav{position:sticky;top:0;z-index:50;background:rgba(247,243,234,0.92);backdrop-filter:blur(6px);border-bottom:1px solid var(--line);}
+  .navwrap{max-width:1140px;margin:0 auto;padding:18px 40px;display:flex;align-items:center;justify-content:space-between;}
+  .navlinks{display:flex;gap:30px;align-items:center;}
+  .navlinks a{font-size:12.5px;letter-spacing:1.5px;text-transform:uppercase;color:var(--ink-soft);}
+  .navlinks a:hover{color:var(--gold-deep);}
+  .navcta{padding:11px 26px;border:1px solid var(--ink);border-radius:30px;font-size:11.5px;letter-spacing:1.5px;text-transform:uppercase;color:var(--ink);}
+  .navcta:hover{background:var(--ink);color:var(--cream);}
+  .navbrand{display:flex;align-items:center;gap:10px;font-family:'Cormorant Garamond',serif;font-size:18px;letter-spacing:2px;color:var(--ink);}
+  .navbrand img{width:30px;height:30px;}
+  .card{background:var(--cream);border:1px solid var(--line);border-radius:6px;padding:32px 34px;}
+  .featured{display:grid;grid-template-columns:320px 1fr;gap:48px;align-items:center;}
+  @media(max-width:860px){
+    .grid2,.grid3,.grid4,.featured{grid-template-columns:1fr !important;}
+    .wrap{padding:0 24px;}
+    .sec{padding:72px 0;}
+    .h1{font-size:30px !important;}
+    .navlinks{display:none;}
+    .navwrap{padding:14px 20px;}
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="navwrap">
+    <div class="navbrand"><img src="59b3815474f8cc07a23fa32e7fe5e2ff.png" alt=""> MAISON ORYA</div>
+    <div class="navlinks">
+      <a href="index.html">Accueil</a>
+      <a href="#parcours">Le parcours</a>
+      <a href="#temoignages">Témoignages</a>
+      <a href="#tarif">Tarif</a>
+      <a href="#faq">FAQ</a>
+      <a href="reliance.html">Voir RELIANCE (collectif)</a>
+    </div>
+    <a href="#contact" class="navcta">Appel découverte</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div style="position:relative;width:100%;height:70vh;min-height:460px;overflow:hidden;">
+  <img src="2a90ed8296b8bc0cb5a0487398e26d9f.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 30%;">
+  <div style="position:absolute;inset:0;background:linear-gradient(180deg, rgba(33,29,24,0.35) 0%, rgba(33,29,24,0.4) 45%, rgba(33,29,24,0.88) 100%);"></div>
+  <div style="position:relative;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;text-align:center;padding:0 24px 70px;color:var(--cream);">
+    <div class="eyebrow on-dark">Maison ORYA</div>
+    <div style="margin-top:16px;font-family:'Cormorant Garamond',serif;font-weight:600;font-size:min(13vw, 100px);line-height:1;letter-spacing:2px;color:var(--cream);">RACINE</div>
+    <div style="margin-top:18px;font-size:14px;letter-spacing:2.5px;text-transform:uppercase;color:var(--cream);opacity:.85;">Accompagnement individuel <span style="color:var(--gold);margin:0 8px;">·</span> 3 mois</div>
+    <div style="margin-top:34px;font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:400;font-size:clamp(20px,3vw,32px);line-height:1.35;max-width:820px;color:var(--cream);">Tu n'as plus besoin de fuir ton corps pour avancer dans ta vie.</div>
+    <a href="#contact" class="btn" style="border-color:var(--cream);">Réserver un appel découverte</a>
+  </div>
+</div>
+
+<div class="sec" style="padding:60px 0 0;">
+  <div class="wrap">
+    <div class="body-text" style="text-align:center;margin:0 auto;">Tu retrouves ici tout ce qui est propre à Racine. La méthode, la philosophie et « qui je suis » sont communes à mes deux accompagnements — <a href="index.html">tu peux les lire sur la page d'accueil</a>.</div>
+  </div>
+</div>
+
+<!-- TRIPTYQUE / PARCOURS -->
+<section class="sec sec-dark" id="parcours" style="padding-bottom:70px;">
+  <div class="wrap">
+    <div style="text-align:center;">
+      <div class="eyebrow on-dark">Le parcours</div>
+      <div class="h1 on-dark" style="font-size:34px;">Trois mois, trois phases</div>
+    </div>
+    <div class="grid3" style="margin-top:48px;">
+      <div>
+        <div style="position:relative;width:100%;height:320px;border-radius:4px;overflow:hidden;">
+          <img src="1ad42e95aef51ad3bad21e6eaaf510ee.jpg" alt="" style="width:100%;height:100%;object-fit:cover;">
+          <div style="position:absolute;inset:0;background:linear-gradient(to bottom, rgba(33,29,24,0) 55%, rgba(33,29,24,0.55) 100%);"></div>
+          <div style="position:absolute;left:0;right:0;bottom:20px;text-align:center;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:26px;color:var(--cream);">Revenir</div>
+        </div>
+        <div class="eyebrow on-dark" style="margin-top:16px;">Le premier mois</div>
+        <div style="font-size:13.5px;line-height:1.6;color:var(--cream);opacity:.82;margin-top:6px;">Créer de la sécurité, clarifier votre vision, observer vos mécanismes. Vous commencez à comprendre votre système nerveux.</div>
+      </div>
+      <div>
+        <div style="position:relative;width:100%;height:320px;border-radius:4px;overflow:hidden;">
+          <img src="75fc941448bf707bf2d02891a5d29e5f.jpg" alt="" style="width:100%;height:100%;object-fit:cover;">
+          <div style="position:absolute;inset:0;background:linear-gradient(to bottom, rgba(33,29,24,0) 55%, rgba(33,29,24,0.55) 100%);"></div>
+          <div style="position:absolute;left:0;right:0;bottom:20px;text-align:center;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:26px;color:var(--cream);">Libérer</div>
+        </div>
+        <div class="eyebrow on-dark" style="margin-top:16px;">Le deuxième mois</div>
+        <div style="font-size:13.5px;line-height:1.6;color:var(--cream);opacity:.82;margin-top:6px;">Regarder ce qui se trouve sous les comportements. Breathwork et pratiques somatiques pour ressentir, traverser et transformer.</div>
+      </div>
+      <div>
+        <div style="position:relative;width:100%;height:320px;border-radius:4px;overflow:hidden;">
+          <img src="58ead32dc2733210b5df94ec8c967533.jpg" alt="" style="width:100%;height:100%;object-fit:cover;">
+          <div style="position:absolute;inset:0;background:linear-gradient(to bottom, rgba(33,29,24,0) 55%, rgba(33,29,24,0.55) 100%);"></div>
+          <div style="position:absolute;left:0;right:0;bottom:20px;text-align:center;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:26px;color:var(--cream);">Incarner</div>
+        </div>
+        <div class="eyebrow on-dark" style="margin-top:16px;">Le troisième mois</div>
+        <div style="font-size:13.5px;line-height:1.6;color:var(--cream);opacity:.82;margin-top:6px;">Une nouvelle identité se construit dans la vie : habitudes, rythme, relations, choix, énergie.</div>
+      </div>
+    </div>
+    <div class="quote on-dark" style="text-align:center;margin:44px auto 0;">L'objectif est de vous rendre votre propre boussole.</div>
+  </div>
+</section>
+
+<!-- UNE SEMAINE TYPE -->
+<section class="sec" id="semaine">
+  <div class="wrap">
+    <div class="eyebrow">Concrètement</div>
+    <div class="h1" style="max-width:640px;">Une semaine type dans l'accompagnement</div>
+    <div class="body-text">Racine n'est pas une heure de coaching posée de temps en temps. C'est un rythme qui vous porte au quotidien, et qui s'allège progressivement à mesure que vous reprenez votre autonomie.</div>
+    <div style="margin-top:40px;display:flex;flex-direction:column;gap:28px;max-width:720px;">
+      <div>
+        <div class="h2">Votre fiche de la semaine</div>
+        <div style="margin-top:6px;font-size:15px;line-height:1.65;color:var(--ink-soft);">Une intention claire, un exercice somatique ou d'ancrage, une question pour avancer — envoyée chaque semaine, pour donner une direction à vos journées.</div>
+      </div>
+      <div>
+        <div class="h2">Vos séances individuelles</div>
+        <div style="margin-top:6px;font-size:15px;line-height:1.65;color:var(--ink-soft);">En visio, en tête-à-tête. Le rythme s'adapte à votre évolution : deux rendez-vous par semaine le premier mois pour poser des bases solides, un rendez-vous par semaine le deuxième mois, puis un rendez-vous toutes les deux semaines le troisième mois — pour vous laisser reprendre progressivement les rênes.</div>
+      </div>
+      <div>
+        <div class="h2">Votre méditation guidée</div>
+        <div style="margin-top:6px;font-size:15px;line-height:1.65;color:var(--ink-soft);">Un support audio chaque semaine, à écouter où et quand vous voulez — pour revenir à votre corps entre deux séances.</div>
+      </div>
+      <div>
+        <div class="h2">Le fil WhatsApp</div>
+        <div style="margin-top:6px;font-size:15px;line-height:1.65;color:var(--ink-soft);">Entre les rendez-vous, je reste présente : un doute, une victoire, une question. Vous n'êtes jamais seul·e entre deux séances.</div>
+      </div>
+      <div>
+        <div class="h2">Le Breathwork</div>
+        <div style="margin-top:6px;font-size:15px;line-height:1.65;color:var(--ink-soft);">Un minimum de 6 séances réparties sur les 3 mois, pour aller chercher dans le corps ce que les mots seuls ne libèrent pas.</div>
+      </div>
+    </div>
+    <div class="quote" style="margin-top:36px;">Ce n'est pas une heure par semaine que vous achetez. C'est une présence, un cadre, un rythme qui vous accompagne vraiment.</div>
+  </div>
+</section>
+
+<!-- CE QUI EST INCLUS -->
+<section class="sec sec-card">
+  <div class="wrap">
+    <div class="eyebrow">Ce qui est inclus</div>
+    <div class="h1" style="max-width:640px;">Les moyens mis à votre disposition</div>
+    <div class="grid2" style="max-width:860px;margin-top:30px;">
+      <div class="bullet">Des séances individuelles, en tête-à-tête, entre 30 min et 1h30 selon les besoins</div>
+      <div class="bullet">Un minimum de 6 séances de Breathwork, adaptées à votre évolution</div>
+      <div class="bullet">Une méditation guidée chaque semaine et une fiche hebdomadaire personnalisée</div>
+      <div class="bullet">Un travail de manifestation : visualisations, exercices d'écriture et ancrage de votre identité cible</div>
+      <div class="bullet">Un accompagnement WhatsApp pendant toute la durée du programme</div>
+      <div class="bullet">Des recommandations personnalisées : livres, podcasts, ressources</div>
+      <div class="bullet">L'accès à Maison ORYA Online pendant 6 mois</div>
+      <div class="bullet">Un rendez-vous bilan pour poser les fondations de l'accompagnement</div>
+    </div>
+  </div>
+</section>
+
+<!-- MANIFESTATION -->
+<section class="sec sec-dark" id="manifestation" style="padding-bottom:70px;">
+  <div class="wrap">
+    <div class="eyebrow on-dark">Le travail de manifestation</div>
+    <div class="h1 on-dark" style="max-width:640px;">Donner corps à ce que vous voulez créer</div>
+    <div class="body-text on-dark">
+      Comprendre ne suffit pas. Racine inclut un vrai travail de manifestation : poser clairement l'identité que vous voulez incarner, et l'ancrer dans votre corps, vos choix et votre quotidien — pas seulement dans vos pensées.
+    </div>
+    <div class="grid4" style="margin-top:40px;">
+      <div>
+        <div class="eyebrow on-dark" style="font-size:11px;">Corps</div>
+        <div style="margin-top:8px;font-size:14px;line-height:1.6;color:var(--cream);opacity:.82;">Comment je me sens, me tiens, me nourris, me repose — quand je suis pleinement moi.</div>
+      </div>
+      <div>
+        <div class="eyebrow on-dark" style="font-size:11px;">Argent</div>
+        <div style="margin-top:8px;font-size:14px;line-height:1.6;color:var(--cream);opacity:.82;">Mon rapport à la valeur, à ce que je mérite de recevoir, à l'abondance.</div>
+      </div>
+      <div>
+        <div class="eyebrow on-dark" style="font-size:11px;">Relations</div>
+        <div style="margin-top:8px;font-size:14px;line-height:1.6;color:var(--cream);opacity:.82;">Les liens que je choisis de nourrir, et les limites que j'apprends à poser.</div>
+      </div>
+      <div>
+        <div class="eyebrow on-dark" style="font-size:11px;">Mission</div>
+        <div style="margin-top:8px;font-size:14px;line-height:1.6;color:var(--cream);opacity:.82;">Ce que je veux créer, transmettre, construire — à partir de maintenant.</div>
+      </div>
+    </div>
+    <div class="body-text on-dark" style="margin-top:34px;">
+      À travers des visualisations, des exercices d'écriture et des rituels d'ancrage, vous ne vous contentez pas d'espérer un futur différent : vous le construisez, un choix à la fois.
+    </div>
+    <div class="quote on-dark">Manifester, ce n'est pas attendre que la vie change. C'est devenir, dès aujourd'hui, la personne qui vit déjà cette vie-là.</div>
+  </div>
+</section>
+
+<!-- TEMOIGNAGES -->
+<section class="sec sec-card" id="temoignages">
+  <div class="wrap">
+    <div style="text-align:center;">
+      <div class="eyebrow">Elles en parlent</div>
+      <div class="h1">Témoignages</div>
+      <div class="body-text" style="margin:14px auto 0;text-align:center;">Des parcours différents, un même point de départ : revenir à soi.</div>
+    </div>
+
+    <div class="featured" style="margin-top:50px;background:var(--cream);border-radius:6px;padding:44px;">
+      <img src="75028e06f44a11ef3bafdc108460a5dd.jpg" alt="" style="width:100%;height:340px;object-fit:cover;border-radius:4px;object-position:50% 25%;">
+      <div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:46px;color:var(--gold);line-height:.3;">"</div>
+        <div style="margin-top:14px;font-family:'Cormorant Garamond',serif;font-size:19px;line-height:1.5;color:var(--ink);">Quand j'ai rencontré Oriane, je vivais avec une douleur immense. Elle m'a doucement aidée à revenir vers moi. Ce que j'aime profondément chez elle, c'est sa justesse — sa capacité à voir l'autre, à comprendre ce dont il a besoin, et à l'accompagner sans jamais rien imposer.</div>
+        <div style="margin-top:16px;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:14px;color:var(--gold-deep);">— Julie</div>
+      </div>
+    </div>
+
+    <div class="grid2" style="margin-top:32px;">
+      <div class="card">
+        <div style="font-family:'Cormorant Garamond',serif;font-size:32px;color:var(--gold);line-height:.3;">"</div>
+        <div style="margin-top:8px;font-size:14px;line-height:1.6;color:var(--ink-soft);">Ce qui rend Oriane unique, c'est qu'elle sait exactement où tu dois aller — mais elle ne te le dit pas. Elle s'arrange pour que tu le comprennes par toi-même.</div>
+        <div style="margin-top:14px;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:13px;color:var(--gold-deep);">— Catherine</div>
+      </div>
+      <div class="card">
+        <div style="font-family:'Cormorant Garamond',serif;font-size:32px;color:var(--gold);line-height:.3;">"</div>
+        <div style="margin-top:8px;font-size:14px;line-height:1.6;color:var(--ink-soft);">Je ressors à chaque fois tellement reconnaissante, apaisée — il n'y a rien d'autre qui me fasse autant de bien.</div>
+        <div style="margin-top:14px;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:13px;color:var(--gold-deep);">— Olivia</div>
+      </div>
+      <div class="card">
+        <div style="font-family:'Cormorant Garamond',serif;font-size:32px;color:var(--gold);line-height:.3;">"</div>
+        <div style="margin-top:8px;font-size:14px;line-height:1.6;color:var(--ink-soft);">J'ai confiance maintenant en mon corps, ma tête, mes fondations, en qui je suis. Immense gratitude de t'avoir dans ma vie.</div>
+        <div style="margin-top:14px;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:13px;color:var(--gold-deep);">— Morgana</div>
+      </div>
+      <div class="card">
+        <div style="font-family:'Cormorant Garamond',serif;font-size:32px;color:var(--gold);line-height:.3;">"</div>
+        <div style="margin-top:8px;font-size:14px;line-height:1.6;color:var(--ink-soft);">Tu m'aides à porter un regard lucide sur mon chemin, et à m'ouvrir aux possibilités infinies de demain.</div>
+        <div style="margin-top:14px;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:13px;color:var(--gold-deep);">— Charlotte</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INVESTISSEMENT -->
+<section class="sec sec-dark" id="tarif">
+  <div class="wrap">
+    <div class="eyebrow on-dark">L'investissement</div>
+    <div class="h1 on-dark" style="font-size:48px;color:var(--gold);">2 800 €</div>
+    <div style="margin-top:6px;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:var(--cream);opacity:.6;">RACINE · 3 mois · Modalités adaptées, sur simple demande</div>
+    <div class="body-text on-dark">
+      Ce que vous investissez ici n'est pas simplement du temps passé ensemble. C'est un engagement envers vous-même.
+      <br><br>
+      Nous avons souvent appris à regarder ce que les choses vont nous coûter. Beaucoup plus rarement à regarder ce que nous coûte le fait de ne rien changer.
+    </div>
+    <div class="quote on-dark">Quelle valeur je donne à mon énergie ? À mon temps ? À la vie que je suis en train de créer ?</div>
+    <div class="divider on-dark"></div>
+    <div class="h1 on-dark" style="font-size:22px;">Vous reprenez progressivement les rênes de votre vie</div>
+    <div class="body-text on-dark">
+      Lorsque vous allez mieux, votre énergie, vos choix et vos relations changent. Vous n'êtes plus uniquement en train de survivre, de gérer ou de vous protéger. Vous recommencez à créer.
+    </div>
+  </div>
+</section>
+
+<!-- VOLONTAIREMENT LIMITE -->
+<section class="sec sec-dark" style="padding-top:0;padding-bottom:70px;">
+  <div class="wrap">
+    <div class="divider on-dark" style="max-width:420px;"></div>
+    <div class="eyebrow on-dark" style="margin-top:44px;">Un accompagnement volontairement limité</div>
+    <div class="h1 on-dark" style="font-size:30px;max-width:620px;">Les places sont volontairement limitées</div>
+    <div class="body-text on-dark">
+      Racine est un accompagnement profondément individuel. Chaque personne demande du temps, de la présence et une attention réelle.
+      <br><br>
+      Je choisis donc volontairement de limiter le nombre de personnes que j'accompagne simultanément afin de pouvoir rester pleinement disponible et réellement impliquée dans chaque parcours. Ce n'est pas un programme que l'on peut suivre à plusieurs dizaines de personnes.
+    </div>
+    <div class="quote on-dark" style="font-size:25px;">C'est un espace intime, personnalisé et profondément vivant.</div>
+    <div class="body-text on-dark">Les accompagnements commencent uniquement lorsque je sais que je peux réellement être présente pour vous.</div>
+  </div>
+</section>
+
+<!-- POUR VOUS SI -->
+<section class="sec sec-dark" style="padding-top:0;">
+  <div class="wrap">
+    <div class="eyebrow on-dark">Cet accompagnement est pour vous si...</div>
+    <div class="grid2" style="margin-top:20px;max-width:900px;">
+      <div class="bullet on-dark">Vous sentez que quelque chose doit changer</div>
+      <div class="bullet on-dark">Vous avez déjà beaucoup compris, mais la compréhension ne suffit plus</div>
+      <div class="bullet on-dark">Vous êtes prêt à regarder honnêtement vos croyances, vos peurs, vos mécanismes</div>
+      <div class="bullet on-dark">Vous voulez apprendre à poser vos limites, à dire non, sans vous abandonner</div>
+      <div class="bullet on-dark">Vous êtes prêt à traverser de l'inconfort pour retrouver clarté et confiance</div>
+      <div class="bullet on-dark">Vous voulez sortir du pilotage automatique et reprendre votre capacité à choisir</div>
+      <div class="bullet on-dark">Vous préférez un espace rien qu'à vous plutôt qu'un groupe</div>
+    </div>
+    <div class="quote on-dark">Et surtout : vous êtes prêt à devenir souverain de votre transformation.</div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="sec" id="faq">
+  <div class="wrap">
+    <div class="eyebrow">Questions fréquentes — Racine</div>
+    <div class="h1" style="max-width:640px;">Propre à l'accompagnement individuel</div>
+    <div style="margin-top:40px;display:flex;flex-direction:column;gap:30px;max-width:760px;">
+
+      <div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--ink);">Combien de temps dure l'accompagnement ?</div>
+        <div style="margin-top:8px;font-size:15px;line-height:1.65;color:var(--ink-soft);">3 mois, avec un rendez-vous bilan au départ puis des séances individuelles tout au long du parcours, adaptées à votre rythme et à votre évolution.</div>
+      </div>
+
+      <div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--ink);">Pourquoi les places sont-elles limitées ?</div>
+        <div style="margin-top:8px;font-size:15px;line-height:1.65;color:var(--ink-soft);">Parce que Racine est un accompagnement profondément individuel. Je choisis de limiter le nombre de personnes que j'accompagne simultanément afin de rester pleinement disponible et impliquée dans chaque parcours — les accompagnements commencent uniquement lorsque je sais que je peux réellement être présente pour vous.</div>
+      </div>
+
+      <div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--ink);">À qui s'adresse Racine (et à qui ça ne s'adresse pas) ?</div>
+        <div style="margin-top:8px;font-size:15px;line-height:1.65;color:var(--ink-soft);">Racine s'adresse à toute personne prête à s'engager sur 3 mois dans un travail profond — pas seulement écouter, mais mettre en mouvement dans son corps et sa vie quotidienne. C'est un travail à deux : 50 % de mon accompagnement, 50 % du vôtre. Il faut être prêt à vous confronter, à remettre en question ce qui, en l'état, ne fonctionne pas — et être volontaire pour avancer. Si vous préférez avancer entourée d'un groupe plutôt que seule avec moi, <a href="reliance.html">RELIANCE</a> est sans doute plus adapté.<br><br>Ce n'est pas un accompagnement thérapeutique, ni un substitut à un suivi médical ou psychologique.</div>
+      </div>
+
+      <div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--ink);">Que se passe-t-il après les 3 mois ?</div>
+        <div style="margin-top:8px;font-size:15px;line-height:1.65;color:var(--ink-soft);">Vous repartez avec une vision plus claire de ce que vous voulez créer, une meilleure compréhension de vos mécanismes, et les ressources pour continuer à avancer seule.<br><br>Vous gardez aussi 3 mois supplémentaires d'accès à Maison ORYA Online, et je reste disponible. Une relation s'est créée — Racine continue de s'intégrer en vous bien après la fin de l'accompagnement.</div>
+      </div>
+
+      <div style="border:1px dashed var(--line);border-radius:6px;padding:18px 22px;">
+        <div style="font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--ink);">Que se passe-t-il si je dois annuler ou reporter une séance ?</div>
+        <div style="margin-top:8px;font-size:14px;line-height:1.6;color:var(--ink-soft);font-style:italic;">[À compléter avec Oriane — ta politique d'annulation.]</div>
+      </div>
+
+      <div style="font-size:14px;color:var(--ink-soft);">Les questions générales (paiement, premier appel, pas d'expérience requise...) sont sur <a href="index.html">la page d'accueil</a>.</div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL / CONTACT -->
+<section class="sec sec-dark" id="contact" style="padding-top:0;">
+  <div class="wrap">
+    <div class="divider on-dark" style="max-width:420px;"></div>
+    <div class="eyebrow on-dark" style="margin-top:40px;">Prêt à commencer ?</div>
+    <div class="h1 on-dark" style="max-width:600px;">Un premier échange, gratuit et sans engagement</div>
+    <div class="body-text on-dark" style="max-width:600px;">
+      Avant toute chose, je vous propose un appel découverte — <strong style="color:var(--cream);">gratuit, et non compris dans l'accompagnement</strong> — pour parler de votre situation, et voir ensemble si Racine est le bon accompagnement pour vous.
+    </div>
+    <div style="margin-top:14px;display:flex;flex-direction:column;gap:4px;font-size:15px;color:var(--cream);">
+      <div>Pas de promesse miracle.</div>
+      <div>Pas de recette toute faite.</div>
+      <div>Un travail profond, incarné et sur-mesure.</div>
+    </div>
+    <a href="mailto:oriane_g@hotmail.com?subject=Appel%20d%C3%A9couverte%20RACINE" class="btn" style="border-color:var(--cream);">Réserver un appel découverte</a>
+    <div style="margin-top:60px;display:flex;flex-direction:column;gap:3px;font-family:'Cormorant Garamond',serif;font-size:19px;color:var(--gold);">
+      <div>Revenir au corps.</div>
+      <div>Reprendre les rênes.</div>
+      <div>Créer depuis l'intérieur.</div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer style="background:var(--ink);padding:40px 0;border-top:1px solid rgba(247,243,234,0.15);">
+  <div class="wrap" style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;">
+    <div style="display:flex;align-items:center;gap:12px;">
+      <img src="59b3815474f8cc07a23fa32e7fe5e2ff.png" alt="" style="width:28px;height:28px;">
+      <div style="font-size:12px;letter-spacing:1.5px;color:var(--cream);opacity:.7;">MAISON ORYA</div>
+    </div>
+    <div style="font-size:13px;color:var(--cream);opacity:.65;display:flex;gap:24px;flex-wrap:wrap;">
+      <span>oriane_g@hotmail.com</span>
+      <span>@maison.orya_</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

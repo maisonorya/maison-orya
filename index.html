@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Maison ORYA — Coaching</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Karla:wght@400;500;600;700&display=swap">
+<style>
+  :root{
+    --cream:#F7F3EA;
+    --card:#EFE7D5;
+    --ink:#211D18;
+    --ink-soft:#5B5346;
+    --gold:#C6A968;
+    --gold-deep:#9C7F45;
+    --line:#E3DAC4;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;font-family:'Karla',sans-serif;color:var(--ink);background:var(--cream);-webkit-font-smoothing:antialiased;}
+  a{color:var(--gold-deep);text-decoration:none;}
+  a:hover{color:var(--gold);}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 40px;}
+  .sec{padding:110px 0;}
+  .sec-dark{background:var(--ink);color:var(--cream);}
+  .sec-card{background:var(--card);}
+  .eyebrow{font-size:12.5px;letter-spacing:3px;text-transform:uppercase;color:var(--gold-deep);font-weight:600;}
+  .eyebrow.on-dark{color:var(--gold);}
+  .h1{font-family:'Cormorant Garamond',serif;font-weight:500;color:var(--ink);line-height:1.15;margin:14px 0 0;font-size:40px;}
+  .h1.on-dark{color:var(--cream);}
+  .h2{font-family:'Cormorant Garamond',serif;font-weight:500;color:var(--gold-deep);font-size:22px;margin:0;}
+  .h2.on-dark{color:var(--gold);}
+  .body-text{font-size:16px;line-height:1.75;color:var(--ink-soft);margin-top:22px;max-width:680px;}
+  .body-text.on-dark{color:var(--cream);opacity:.86;}
+  .quote{font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--gold-deep);font-size:23px;line-height:1.4;margin-top:28px;max-width:680px;}
+  .quote.on-dark{color:var(--gold);}
+  .btn{display:inline-block;padding:17px 42px;border:1px solid currentColor;border-radius:40px;font-size:12.5px;letter-spacing:2.2px;text-transform:uppercase;text-decoration:none;color:inherit;margin-top:34px;font-weight:600;}
+  .btn:hover{background:currentColor;}
+  .btn-dark:hover{color:var(--ink);}
+  .btn-light:hover{color:var(--cream);}
+  .grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:10px 40px;margin-top:24px;}
+  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;margin-top:36px;}
+  .grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:28px;margin-top:40px;}
+  .bullet{padding-left:22px;position:relative;font-size:15px;line-height:1.65;color:var(--ink-soft);}
+  .bullet.on-dark{color:var(--cream);opacity:.85;}
+  .bullet::before{content:"—";position:absolute;left:0;color:var(--gold-deep);}
+  .bullet.on-dark::before{color:var(--gold);}
+  .divider{height:1px;background:var(--line);margin:36px 0;max-width:680px;}
+  .divider.on-dark{background:var(--cream);opacity:.2;}
+  nav{position:sticky;top:0;z-index:50;background:rgba(247,243,234,0.92);backdrop-filter:blur(6px);border-bottom:1px solid var(--line);}
+  .navwrap{max-width:1140px;margin:0 auto;padding:18px 40px;display:flex;align-items:center;justify-content:space-between;}
+  .navlinks{display:flex;gap:30px;align-items:center;}
+  .navlinks a{font-size:12.5px;letter-spacing:1.5px;text-transform:uppercase;color:var(--ink-soft);}
+  .navlinks a:hover{color:var(--gold-deep);}
+  .navcta{padding:11px 26px;border:1px solid var(--ink);border-radius:30px;font-size:11.5px;letter-spacing:1.5px;text-transform:uppercase;color:var(--ink);}
+  .navcta:hover{background:var(--ink);color:var(--cream);}
+  .navbrand{display:flex;align-items:center;gap:10px;font-family:'Cormorant Garamond',serif;font-size:18px;letter-spacing:2px;color:var(--ink);}
+  .navbrand img{width:30px;height:30px;}
+  .card{background:var(--cream);border:1px solid var(--line);border-radius:6px;padding:32px 34px;}
+  .featured{display:grid;grid-template-columns:320px 1fr;gap:48px;align-items:center;}
+  .offercard{background:var(--cream);border:1px solid var(--line);border-radius:8px;padding:40px;display:flex;flex-direction:column;}
+  .offercard.dark{background:var(--ink);color:var(--cream);border-color:rgba(247,243,234,0.15);}
+  @media(max-width:860px){
+    .grid2,.grid3,.grid4,.featured{grid-template-columns:1fr !important;}
+    .wrap{padding:0 24px;}
+    .sec{padding:72px 0;}
+    .h1{font-size:30px !important;}
+    .navlinks{display:none;}
+    .navwrap{padding:14px 20px;}
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="navwrap">
+    <div class="navbrand"><img src="59b3815474f8cc07a23fa32e7fe5e2ff.png" alt=""> MAISON ORYA</div>
+    <div class="navlinks">
+      <a href="#methode">Méthode</a>
+      <a href="#qui-suis-je">Qui suis-je</a>
+      <a href="#chemins">Racine &amp; RELIANCE</a>
+      <a href="#faq">FAQ</a>
+    </div>
+    <a href="#contact" class="navcta">Appel découverte</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div style="position:relative;width:100%;height:92vh;min-height:620px;overflow:hidden;">
+  <img src="575ece51bc65e13338e1d28d305b3cef.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 30%;">
+  <div style="position:absolute;inset:0;background:linear-gradient(180deg, rgba(33,29,24,0.35) 0%, rgba(33,29,24,0.4) 45%, rgba(33,29,24,0.88) 100%);"></div>
+  <div style="position:relative;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;text-align:center;padding:0 24px 90px;color:var(--cream);">
+    <div class="eyebrow on-dark">Maison ORYA — Coaching</div>
+    <div style="margin-top:16px;font-family:'Cormorant Garamond',serif;font-weight:600;font-size:min(8vw, 62px);line-height:1.1;letter-spacing:1px;color:var(--cream);max-width:920px;">Revenir dans son corps pour reprendre les rênes de sa vie</div>
+    <div style="margin-top:18px;font-size:14px;letter-spacing:2.5px;text-transform:uppercase;color:var(--cream);opacity:.85;">Accompagnement somatique <span style="color:var(--gold);margin:0 8px;">·</span> Transformation identitaire</div>
+    <div style="margin-top:34px;font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:400;font-size:clamp(18px,2.6vw,26px);line-height:1.35;max-width:760px;color:var(--cream);">En individuel, en tête-à-tête sur 3 mois — ou en collectif, en cercle de 6 personnes sur 6 mois.</div>
+    <a href="#contact" class="btn" style="border-color:var(--cream);">Réserver un appel découverte</a>
+  </div>
+</div>
+
+<!-- RECONNAISSEZ-VOUS -->
+<section class="sec">
+  <div class="wrap">
+    <div class="eyebrow">Ce qui peut vous amener ici</div>
+    <div class="h1" style="max-width:640px;">Peut-être que vous avez la sensation d'être constamment en train de gérer</div>
+    <div class="body-text">
+      Vous avancez, vous assurez, vous prenez soin des autres, vous faites ce qu'il faut... mais vous ne savez plus vraiment ce dont <em>vous</em>, vous avez besoin.
+      <br><br>
+      Peut-être que votre corps vous parle de plus en plus fort. Fatigue. Tensions. Difficulté à ralentir. Émotions difficiles à traverser. Impression d'être toujours « dans la tête ».
+      <br><br>
+      Peut-être que vous vous reconnaissez dans certains mécanismes :
+    </div>
+    <div class="grid2" style="max-width:820px;">
+      <div class="bullet">Avoir du mal à dire non ou à poser vos limites</div>
+      <div class="bullet">Vous faire passer après tout le monde</div>
+      <div class="bullet">Fonctionner dans l'urgence ou l'hyperactivité</div>
+      <div class="bullet">Chercher à contrôler ce qui vous échappe</div>
+      <div class="bullet">Vous sentir déconnecté·e de vos sensations et de votre intuition</div>
+      <div class="bullet">Répéter certains schémas relationnels</div>
+      <div class="bullet">Savoir ce que vous voulez sans réussir à passer à l'action</div>
+      <div class="bullet">Ressentir une perte de sens, l'impression de ne plus savoir qui vous êtes</div>
+    </div>
+    <div class="quote">« Je sais qu'il est temps que quelque chose change. »</div>
+  </div>
+</section>
+
+<!-- REFRAME -->
+<section class="sec sec-card">
+  <div class="wrap">
+    <div class="eyebrow">Ce n'est pas un problème de volonté</div>
+    <div class="h1" style="max-width:680px;">Le problème, ce n'est pas que vous manquez de discipline</div>
+    <div class="body-text">
+      Vous avez sans doute déjà essayé : lire, réfléchir, vous motiver, vous faire violence. Savoir exactement ce qu'il faudrait changer — et pourtant continuer à reproduire les mêmes schémas.
+      <br><br>
+      Ce n'est pas un manque de volonté. C'est un système nerveux en alerte permanente, qui n'a plus l'espace pour sentir, pour choisir, pour se reposer.
+      <br><br>
+      Le changement ne se joue pas uniquement dans la tête. Il doit aussi s'incarner — dans le corps, dans le système nerveux, dans ce que vous répétez au quotidien.
+    </div>
+    <div class="quote">Alors on ne commence jamais par « se motiver plus ». On commence par créer de la sécurité.</div>
+  </div>
+</section>
+
+<!-- LE FIL ROUGE (philosophie générale) -->
+<section class="sec sec-dark" id="filrouge">
+  <div class="wrap">
+    <div class="featured">
+      <img src="9fdc8a5707e169b95f69af82105488b7.jpg" alt="" style="width:100%;height:420px;object-fit:cover;border-radius:4px;object-position:50% 20%;">
+      <div>
+        <div class="eyebrow on-dark">Le fil rouge</div>
+        <div class="h1 on-dark" style="font-size:34px;">Pourquoi ce travail est aussi puissant</div>
+        <div class="body-text on-dark">
+          La réalité extérieure est la même pour tout le monde. Un arbre reste un arbre. Mais une même situation peut être vécue de mille façons différentes, selon la personne qui la traverse.
+        </div>
+        <div class="quote on-dark">Ce qui change, ce n'est pas ce qui se passe. C'est depuis où vous le vivez.</div>
+      </div>
+    </div>
+    <div class="divider on-dark"></div>
+    <div class="body-text on-dark" style="max-width:820px;">
+      Ce n'est pas un hasard : ce n'est pas la réalité extérieure qui façonne votre expérience. C'est votre monde intérieur — votre vision, vos croyances, l'identité depuis laquelle vous vivez.
+      <br><br>
+      Et c'est précisément ce qui rend ce travail si puissant. Le cerveau ne fait pas totalement la différence entre ce qui est vécu et ce qui est entraîné avec suffisamment de clarté et de régularité. Un souvenir peut encore faire monter les larmes des années plus tard. Une scène intensément ressentie peut faire naître, dans le corps, une émotion bien réelle. Ce que nous répétons à l'intérieur, le corps finit par le reconnaître comme familier.
+      <br><br>
+      C'est exactement ce que nous entraînons, ensemble : vous brancher, avec constance, sur la vision de la vie que vous voulez créer — et entraîner votre corps, votre système nerveux, à reconnaître cet état comme le vôtre. Dans vos choix. Vos relations. Votre travail. Votre rapport à vous-même.
+      <br><br>
+      Mais entraîner son système à vivre autrement ne se limite pas à visualiser. Cela fait remonter, inévitablement, tout ce qui aujourd'hui vous empêche encore d'y croire : les croyances, les peurs, les mécanismes de protection. Et c'est ce travail-là — les traverser, les comprendre, les transformer — qui fait qu'une vision cesse d'être un rêve pour devenir une réalité incarnée.
+    </div>
+    <div class="quote on-dark" style="font-size:27px;">Ce n'est plus votre vie qui vous mène. C'est vous qui reprenez les rênes.</div>
+  </div>
+</section>
+
+<!-- LA METHODE -->
+<section class="sec" id="methode">
+  <div class="wrap">
+    <div class="eyebrow">L'approche</div>
+    <div class="h1" style="max-width:640px;">Ma méthode</div>
+    <div class="body-text">
+      Clarifier ce que vous souhaitez créer, comprendre ce qui vous empêche encore de l'incarner, puis construire progressivement la capacité à vivre depuis cette nouvelle réalité. Un travail intérieur, concret, qui se déploie entre trois dimensions qui se répondent — en individuel comme en collectif.
+    </div>
+    <div class="grid3">
+      <div>
+        <div class="h2">La vision</div>
+        <div style="margin-top:10px;font-size:14.5px;line-height:1.6;color:var(--ink-soft);">Savoir ce que l'on veut créer, pas seulement ce que l'on ne veut plus. <em>La vision donne une direction.</em></div>
+      </div>
+      <div>
+        <div class="h2">L'identité</div>
+        <div style="margin-top:10px;font-size:14.5px;line-height:1.6;color:var(--ink-soft);">Observer ce qui, en vous, n'est pas encore aligné avec cette vision : croyances, peurs, anciens rôles.</div>
+      </div>
+      <div>
+        <div class="h2">Le corps</div>
+        <div style="margin-top:10px;font-size:14.5px;line-height:1.6;color:var(--ink-soft);">Nos mécanismes se logent dans la respiration, le mouvement, la posture. Le corps devient un espace d'observation.</div>
+      </div>
+    </div>
+    <div class="quote">Voir, comprendre, ressentir, transformer, incarner — ces trois dimensions se rencontrent dans un même processus, que vous le traversiez seul·e avec moi ou porté·e par un groupe.</div>
+  </div>
+</section>
+
+<!-- QUI SUIS-JE -->
+<section class="sec sec-card" id="qui-suis-je">
+  <div class="wrap">
+    <div class="featured" style="grid-template-columns:280px 1fr;">
+      <img src="9fa289b9457262e7b96e7f771390fe5d.jpg" alt="" style="width:100%;height:380px;object-fit:cover;object-position:50% 22%;border-radius:4px;">
+      <div>
+        <div class="eyebrow">Qui suis-je</div>
+        <div class="h1" style="font-size:28px;">Cette méthode est née de mon propre chemin</div>
+        <div class="body-text" style="margin-top:14px;">
+          J'ai longtemps vécu très loin de mon corps. Toujours en mouvement, toujours dans l'action, une vie menée à cent à l'heure. Je pensais savoir avancer. En réalité, je fuyais beaucoup de choses.
+          <br><br>
+          Mon corps a fini par parler assez fort pour que je sois obligée de l'écouter. Alors j'ai réuni différentes pratiques — yoga, respiration, breathwork, méditation, travail énergétique, travail sur l'identité. Pas comme une accumulation d'outils, mais comme différentes portes qui mènent toutes au même endroit : soi.
+          <br><br>
+          Aujourd'hui, j'accompagne celles et ceux qui, comme moi, ont tenu longtemps — et qui sentent qu'il est temps de revenir à eux. Certaines personnes ont besoin d'un espace rien qu'à elles pour ça : c'est Racine. D'autres ont besoin d'un groupe pour oser : c'est RELIANCE. Les deux portent la même méthode.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MAISON ORYA ONLINE -->
+<section class="sec">
+  <div class="wrap">
+    <div class="featured">
+      <div>
+        <div class="eyebrow">C'est quoi Maison ORYA Online ?</div>
+        <div class="h1" style="font-size:24px;">Votre pratique continue de vivre dans votre quotidien</div>
+        <div class="body-text" style="margin-top:14px;">
+          Un live collectif chaque semaine, l'ensemble des cours en replay, une bibliothèque de pratiques — yoga, mobilité, méditation, respiration — et du Breathwork en collectif. Inclus dans Racine et dans RELIANCE, chacun avec sa propre durée d'accès.
+        </div>
+      </div>
+      <img src="e6c14f9bed51e0b7ba47b26494bc450f.jpg" alt="" style="width:100%;height:320px;object-fit:cover;border-radius:4px;">
+    </div>
+  </div>
+</section>
+
+<!-- DEUX CHEMINS -->
+<section class="sec sec-dark" id="chemins">
+  <div class="wrap">
+    <div class="eyebrow on-dark">Comment faire ce chemin avec moi</div>
+    <div class="h1 on-dark" style="max-width:680px;">Deux façons de le traverser</div>
+    <div class="body-text on-dark" style="max-width:780px;">
+      Même méthode, même exigence — mais deux formats très différents, selon ce dont vous avez besoin maintenant : un espace rien qu'à vous, ou la force d'un groupe.
+    </div>
+    <div class="grid2" style="margin-top:48px;gap:32px;">
+      <div class="offercard">
+        <div class="eyebrow">En individuel</div>
+        <div class="h1" style="font-size:30px;">Racine</div>
+        <div style="margin-top:6px;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:var(--ink-soft);">Tête-à-tête · 3 mois · 2 800 €</div>
+        <div style="margin-top:16px;font-size:14.5px;line-height:1.7;color:var(--ink-soft);">Un accompagnement profondément individuel. Séances adaptées à votre rythme, suivi WhatsApp continu, un parcours rien que pour vous.</div>
+        <a href="racine.html" class="btn btn-dark" style="border-color:var(--ink);align-self:flex-start;">Découvrir Racine</a>
+      </div>
+      <div class="offercard dark">
+        <div class="eyebrow on-dark">En collectif</div>
+        <div class="h1 on-dark" style="font-size:30px;">RELIANCE</div>
+        <div style="margin-top:6px;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:var(--cream);opacity:.6;">Groupe de 6 · 6 mois · 2 200 €</div>
+        <div style="margin-top:16px;font-size:14.5px;line-height:1.7;color:var(--cream);opacity:.85;">Un cercle fermé de 6 personnes. Le soutien, le miroir et l'élan d'un groupe, pour ne plus traverser ce chemin seul·e.</div>
+        <a href="reliance.html" class="btn btn-light" style="border-color:var(--cream);align-self:flex-start;">Découvrir RELIANCE</a>
+      </div>
+    </div>
+    <div class="body-text on-dark" style="margin-top:36px;">Vous hésitez entre les deux ? C'est exactement ce dont on parle lors de l'appel découverte.</div>
+  </div>
+</section>
+
+<!-- FAQ COMMUNE -->
+<section class="sec" id="faq">
+  <div class="wrap">
+    <div class="eyebrow">Questions fréquentes</div>
+    <div class="h1" style="max-width:640px;">Avant de vous lancer</div>
+    <div style="margin-top:40px;display:flex;flex-direction:column;gap:30px;max-width:760px;">
+
+      <div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--ink);">Comment se passe l'appel découverte ?</div>
+        <div style="margin-top:8px;font-size:15px;line-height:1.65;color:var(--ink-soft);">Il est gratuit, sans engagement, et non compris dans l'accompagnement. C'est un moment pour parler de votre situation et voir ensemble quel format — Racine ou RELIANCE — est le bon pour vous.</div>
+      </div>
+
+      <div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--ink);">Est-ce que je peux payer en plusieurs fois ?</div>
+        <div style="margin-top:8px;font-size:15px;line-height:1.65;color:var(--ink-soft);">Oui, pour les deux formats. Les modalités de paiement sont adaptées sur simple demande — on en parle ensemble lors de l'appel découverte.</div>
+      </div>
+
+      <div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--ink);">Je n'ai jamais pratiqué le yoga, la méditation ou le breathwork — est-ce un frein ?</div>
+        <div style="margin-top:8px;font-size:15px;line-height:1.65;color:var(--ink-soft);">Non, ni pour l'un ni pour l'autre. Les outils sont choisis selon ce qui se présente. Aucune expérience préalable n'est nécessaire.</div>
+      </div>
+
+      <div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--ink);">Les séances ont-elles lieu en présentiel ou à distance ?</div>
+        <div style="margin-top:8px;font-size:15px;line-height:1.65;color:var(--ink-soft);">Principalement en visio pour les deux formats. En individuel, certaines pratiques peuvent se faire en présentiel si besoin.</div>
+      </div>
+
+      <div style="border:1px dashed var(--line);border-radius:6px;padding:18px 22px;">
+        <div style="font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--ink);">Les questions propres à chaque format (durée, pour qui, après le programme...) sont sur sa page dédiée</div>
+        <div style="margin-top:8px;font-size:14px;line-height:1.6;color:var(--ink-soft);font-style:italic;">Voir la FAQ de <a href="racine.html">Racine</a> ou celle de <a href="reliance.html">RELIANCE</a>.</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL / CONTACT -->
+<section class="sec sec-dark" id="contact" style="padding-top:0;">
+  <div class="wrap">
+    <div class="divider on-dark" style="max-width:420px;"></div>
+    <div class="eyebrow on-dark" style="margin-top:40px;">Prêt·e à commencer ?</div>
+    <div class="h1 on-dark" style="max-width:600px;">Un premier échange, gratuit et sans engagement</div>
+    <div class="body-text on-dark" style="max-width:600px;">
+      Avant toute chose, je vous propose un appel découverte — <strong style="color:var(--cream);">gratuit, et non compris dans l'accompagnement</strong> — pour parler de votre situation, et voir ensemble si Racine ou RELIANCE est le bon espace pour vous.
+    </div>
+    <div style="margin-top:14px;display:flex;flex-direction:column;gap:4px;font-size:15px;color:var(--cream);">
+      <div>Pas de promesse miracle.</div>
+      <div>Pas de recette toute faite.</div>
+      <div>Un travail profond, incarné et sur-mesure.</div>
+    </div>
+    <a href="mailto:oriane_g@hotmail.com?subject=Appel%20d%C3%A9couverte" class="btn" style="border-color:var(--cream);">Réserver un appel découverte</a>
+    <div style="margin-top:60px;display:flex;flex-direction:column;gap:3px;font-family:'Cormorant Garamond',serif;font-size:19px;color:var(--gold);">
+      <div>Revenir au corps.</div>
+      <div>Reprendre les rênes.</div>
+      <div>Créer depuis l'intérieur.</div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer style="background:var(--ink);padding:40px 0;border-top:1px solid rgba(247,243,234,0.15);">
+  <div class="wrap" style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;">
+    <div style="display:flex;align-items:center;gap:12px;">
+      <img src="59b3815474f8cc07a23fa32e7fe5e2ff.png" alt="" style="width:28px;height:28px;">
+      <div style="font-size:12px;letter-spacing:1.5px;color:var(--cream);opacity:.7;">MAISON ORYA</div>
+    </div>
+    <div style="font-size:13px;color:var(--cream);opacity:.65;display:flex;gap:24px;flex-wrap:wrap;">
+      <span>oriane_g@hotmail.com</span>
+      <span>@maison.orya_</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
