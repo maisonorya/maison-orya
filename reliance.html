@@ -57,10 +57,9 @@
   .brandmark{width:29px;height:29px;border-radius:50%;border:1px solid var(--gold);display:inline-flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:14px;color:var(--gold);flex-shrink:0;}
   .card{background:var(--cream);border:1px solid var(--line);border-radius:6px;padding:32px 34px;}
   .featured{display:grid;grid-template-columns:320px 1fr;gap:48px;align-items:center;}
-  .photo-banner{width:100%;height:600px;overflow:hidden;}
-  .photo-banner img{width:100%;height:100%;object-fit:cover;display:block;}
+  .photo-banner{width:100%;aspect-ratio:3/2;overflow:hidden;}
+  .photo-banner img{width:100%;height:100%;object-fit:cover;object-position:50% 50%;display:block;}
   @media(max-width:860px){
-    .photo-banner{height:380px;}
     .grid2,.grid3,.grid4,.featured{grid-template-columns:1fr !important;}
     .wrap{padding:0 24px;}
     .sec{padding:80px 0;}
@@ -233,7 +232,7 @@
   </div>
 </section>
 
-<div class="photo-banner"><img src="img/rel1.jpg" alt="" style="object-position:50% 25%;"></div>
+<div class="photo-banner"><img src="img/rel1.jpg" alt=""></div>
 
 <!-- LE RYTHME -->
 <section class="sec" id="rythme">
@@ -337,7 +336,7 @@
   </div>
 </section>
 
-<div class="photo-banner"><img src="img/rel2.jpg" alt="" style="object-position:50% 44%;"></div>
+<div class="photo-banner"><img src="img/rel2.jpg" alt=""></div>
 
 <!-- INVESTISSEMENT -->
 <section class="sec sec-dark" id="tarif">
@@ -400,7 +399,7 @@
   </div>
 </section>
 
-<div class="photo-banner"><img src="img/rel3.jpg" alt="" style="object-position:50% 42%;"></div>
+<div class="photo-banner"><img src="img/rel3.jpg" alt=""></div>
 
 <!-- POUR QUI / PAS POUR QUI -->
 <section class="sec sec-dark" style="padding-top:0;" id="pourqui">
