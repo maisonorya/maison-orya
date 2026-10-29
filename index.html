@@ -58,15 +58,25 @@
   .brandmark{width:29px;height:29px;border-radius:50%;border:1px solid var(--gold);display:inline-flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:14px;color:var(--gold);flex-shrink:0;}
   .card{background:var(--cream);border:1px solid var(--line);border-radius:6px;padding:32px 34px;}
   .featured{display:grid;grid-template-columns:320px 1fr;gap:48px;align-items:center;}
+  .qsj-split{display:grid;grid-template-columns:1fr 1fr;align-items:stretch;}
+  .qsj-text{padding:110px 64px;display:flex;flex-direction:column;justify-content:center;}
+  .qsj-title{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:44px;line-height:1.15;margin:16px 0 0;color:var(--ink);}
+  .qsj-title em{font-style:italic;color:var(--gold-deep);font-weight:400;}
+  .qsj-photo{overflow:hidden;min-height:620px;}
+  .qsj-photo img{width:100%;height:100%;object-fit:cover;display:block;}
+  .qsj-formations{margin-top:14px;max-width:520px;display:flex;flex-direction:column;gap:9px;}
   .offercard{background:var(--cream);border:1px solid var(--line);border-radius:8px;padding:40px;display:flex;flex-direction:column;}
   .offercard.dark{background:var(--ink);color:var(--cream);border-color:rgba(247,243,234,0.15);}
   .photo-banner{width:100%;aspect-ratio:3/2;overflow:hidden;}
   .photo-banner img{width:100%;height:100%;object-fit:cover;object-position:50% 50%;display:block;}
   @media(max-width:860px){
-    .grid2,.grid3,.grid4,.featured{grid-template-columns:1fr !important;}
+    .grid2,.grid3,.grid4,.featured,.qsj-split{grid-template-columns:1fr !important;}
     .wrap{padding:0 24px;}
     .sec{padding:80px 0;}
     .h1{font-size:30px !important;}
+    .qsj-text{padding:70px 24px;}
+    .qsj-title{font-size:32px !important;}
+    .qsj-photo{min-height:420px;}
     .navlinks{display:none;}
     .navwrap{padding:14px 20px;}
   }
@@ -202,39 +212,37 @@
 <div class="photo-banner"><img src="img/idx3.jpg" alt=""></div>
 
 <!-- QUI SUIS-JE -->
-<section class="sec sec-card" id="qui-suis-je">
-  <div class="wrap">
-    <div class="featured" style="grid-template-columns:280px 1fr;">
-      <img src="9fa289b9457262e7b96e7f771390fe5d.jpg" alt="" style="width:100%;height:380px;object-fit:cover;object-position:50% 22%;border-radius:4px;">
-      <div>
-        <div class="eyebrow">Qui suis-je</div>
-        <div class="h1" style="font-size:28px;">Cette méthode est née de mon propre chemin</div>
-        <div class="body-text" style="margin-top:14px;">
-          J'ai longtemps vécu très loin de mon corps. Toujours en mouvement, toujours dans l'action, une vie menée à cent à l'heure. Je pensais savoir avancer. En réalité, je fuyais beaucoup de choses.
-          <br><br>
-          Mon corps a fini par parler assez fort pour que je sois obligée de l'écouter. Alors j'ai réuni différentes pratiques. Yoga, respiration, breathwork, méditation, travail énergétique, travail sur l'identité. Pas comme une accumulation d'outils, mais comme différentes portes qui mènent toutes au même endroit : soi.
-          <br><br>
-          Aujourd'hui, j'accompagne celles et ceux qui, comme moi, ont tenu longtemps. Et qui sentent qu'il est temps de revenir à eux. Certaines personnes ont besoin d'un espace rien qu'à elles pour ça : c'est RACINE. D'autres ont besoin d'un groupe pour oser : c'est RELIANCE. Les deux portent la même méthode.
-        </div>
-        <div class="body-text" style="margin-top:22px;">
-          <span style="color:var(--ink);font-weight:600;">Mon parcours de formation</span>
-        </div>
-        <div class="grid2" style="margin-top:14px;max-width:760px;">
-          <div class="bullet">340h Vinyasa — Divine Alchemy Yoga School (2019–2022)</div>
-          <div class="bullet">180h Assistanat DAYS — Divine Alchemy Yoga School (2021–2022)</div>
-          <div class="bullet">Yoga &amp; Chakras — Divine Alchemy Yoga School (2020)</div>
-          <div class="bullet">30h Astrologie védique — Les Lunes de Jupiter (2020)</div>
-          <div class="bullet">30h Pranayama, l'art de la respiration — Punky Yoga School, Yoga Alliance (2023)</div>
-          <div class="bullet">Sanātana Dharma — vie yogique et spirituelle selon l'Inde (2023)</div>
-          <div class="bullet">Divinités de l'Inde et symbolisme — Yoga &amp; Vedas, YACEP (2024)</div>
-          <div class="bullet">Mentorat Breathwork, Conscious &amp; Connected Breathwork — Staiv Gentis (2026)</div>
-          <div class="bullet">Coaching et accompagnement transformationnel — Marianna Szeib-Simon (en cours, 2026)</div>
-        </div>
-        <div class="body-text" style="margin-top:22px;">
-          Je guide aussi des cours de yoga et des pratiques de breathwork au sein de mon studio. <a href="https://oryastudio-yoga.com" target="_blank" rel="noopener">Retrouvez tout mon univers yoga sur oryastudio-yoga.com</a>.
-        </div>
-      </div>
+<section class="qsj-split sec-card" id="qui-suis-je">
+  <div class="qsj-text">
+    <div class="eyebrow">Qui suis-je</div>
+    <div class="qsj-title">Cette méthode est née <em>de mon propre chemin</em></div>
+    <div class="body-text" style="margin-top:22px;max-width:520px;">
+      J'ai longtemps vécu très loin de mon corps. Toujours en mouvement, toujours dans l'action, une vie menée à cent à l'heure. Je pensais savoir avancer. En réalité, je fuyais beaucoup de choses.
+      <br><br>
+      Mon corps a fini par parler assez fort pour que je sois obligée de l'écouter. Alors j'ai réuni différentes pratiques. Yoga, respiration, breathwork, méditation, travail énergétique, travail sur l'identité. Pas comme une accumulation d'outils, mais comme différentes portes qui mènent toutes au même endroit : soi.
+      <br><br>
+      Aujourd'hui, j'accompagne celles et ceux qui, comme moi, ont tenu longtemps. Et qui sentent qu'il est temps de revenir à eux. Certaines personnes ont besoin d'un espace rien qu'à elles pour ça : c'est RACINE. D'autres ont besoin d'un groupe pour oser : c'est RELIANCE. Les deux portent la même méthode.
     </div>
+    <div class="body-text" style="margin-top:26px;max-width:520px;">
+      <span style="color:var(--ink);font-weight:600;">Mon parcours de formation</span>
+    </div>
+    <div class="qsj-formations">
+      <div class="bullet">340h Vinyasa — Divine Alchemy Yoga School (2019–2022)</div>
+      <div class="bullet">180h Assistanat DAYS — Divine Alchemy Yoga School (2021–2022)</div>
+      <div class="bullet">Yoga &amp; Chakras — Divine Alchemy Yoga School (2020)</div>
+      <div class="bullet">30h Astrologie védique — Les Lunes de Jupiter (2020)</div>
+      <div class="bullet">30h Pranayama, l'art de la respiration — Punky Yoga School, Yoga Alliance (2023)</div>
+      <div class="bullet">Sanātana Dharma — vie yogique et spirituelle selon l'Inde (2023)</div>
+      <div class="bullet">Divinités de l'Inde et symbolisme — Yoga &amp; Vedas, YACEP (2024)</div>
+      <div class="bullet">Mentorat Breathwork, Conscious &amp; Connected Breathwork — Staiv Gentis (2026)</div>
+      <div class="bullet">Coaching et accompagnement transformationnel — Marianna Szeib-Simon (en cours, 2026)</div>
+    </div>
+    <div class="body-text" style="margin-top:26px;max-width:520px;">
+      Je guide aussi des cours de yoga et des pratiques de breathwork au sein de mon studio. <a href="https://oryastudio-yoga.com" target="_blank" rel="noopener">Retrouvez tout mon univers yoga sur oryastudio-yoga.com</a>.
+    </div>
+  </div>
+  <div class="qsj-photo">
+    <img src="9fa289b9457262e7b96e7f771390fe5d.jpg" alt="">
   </div>
 </section>
 
